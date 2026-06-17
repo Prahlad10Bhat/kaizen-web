@@ -71,39 +71,50 @@ export default function Hero() {
         </motion.div>
 
         {/* Right Column: 3D Image Collage */}
-        <div className="relative h-[400px] md:h-[600px] lg:h-[700px] w-full perspective-1000 hidden lg:block">
+        <motion.div 
+          initial="rest"
+          whileHover="hover"
+          animate="rest"
+          className="relative h-[500px] md:h-[600px] lg:h-[650px] w-full perspective-1000 hidden lg:block cursor-pointer"
+        >
           
           {/* Back image (Tasks/Calendar) */}
           <motion.div
-            initial={{ opacity: 0, x: 100, y: -50, rotateY: -15, scale: 0.8 }}
-            animate={{ opacity: 0.5, x: 200, y: -60, rotateY: -10, scale: 0.85 }}
-            transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute top-10 right-[-100px] w-[500px] rounded-xl border border-white/10 bg-black/40 shadow-2xl overflow-hidden ring-1 ring-white/5 z-10"
+            variants={{
+              rest: { opacity: 0.4, x: 80, y: -40, rotateY: -12, rotateX: 5, scale: 0.8 },
+              hover: { opacity: 0.7, x: 160, y: -80, rotateY: -18, rotateX: 8, scale: 0.85 }
+            }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute top-10 right-0 w-[75%] max-w-[480px] rounded-xl border border-white/10 bg-black/40 shadow-2xl overflow-hidden ring-1 ring-white/5 z-10"
           >
             <Image src="/images/tasks.jpeg" alt="Tasks" width={800} height={500} className="w-full object-cover opacity-80" />
           </motion.div>
 
           {/* Middle image (Notes) */}
           <motion.div
-            initial={{ opacity: 0, x: 100, y: 0, rotateY: -10, scale: 0.9 }}
-            animate={{ opacity: 0.8, x: 100, y: 20, rotateY: -5, scale: 0.95 }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute top-32 right-[-20px] w-[600px] rounded-xl border border-white/10 bg-black/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden ring-1 ring-white/10 z-20"
+            variants={{
+              rest: { opacity: 0.7, x: 10, y: 30, rotateY: -8, rotateX: 3, scale: 0.9 },
+              hover: { opacity: 0.9, x: 50, y: 10, rotateY: -12, rotateX: 5, scale: 0.92 }
+            }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute top-24 right-[10%] w-[80%] max-w-[540px] rounded-xl border border-white/10 bg-black/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden ring-1 ring-white/10 z-20"
           >
             <Image src="/images/notes.jpeg" alt="Notes" width={800} height={500} className="w-full object-cover" />
           </motion.div>
 
           {/* Front image (Dashboard) */}
           <motion.div
-            initial={{ opacity: 0, x: 50, y: 50, rotateY: -5, scale: 0.95 }}
-            animate={{ opacity: 1, x: -40, y: 120, rotateY: 0, scale: 1.05 }}
-            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute top-10 left-0 w-[700px] rounded-2xl border border-white/10 bg-kaizen-surface/90 backdrop-blur-md shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden ring-1 ring-white/20 z-30"
+            variants={{
+              rest: { opacity: 1, x: -60, y: 110, rotateY: -2, rotateX: 0, scale: 1.0 },
+              hover: { opacity: 1, x: -100, y: 130, rotateY: 5, rotateX: 2, scale: 1.03 }
+            }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute top-10 left-0 w-[85%] max-w-[600px] rounded-2xl border border-white/10 bg-kaizen-surface/90 backdrop-blur-md shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden ring-1 ring-white/20 z-30"
           >
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
             <Image src="/images/dashboard.jpeg" alt="Dashboard" width={1000} height={600} className="w-full object-cover" priority />
           </motion.div>
-        </div>
+        </motion.div>
 
       </div>
     </section>
