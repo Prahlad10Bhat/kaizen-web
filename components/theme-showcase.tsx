@@ -149,7 +149,7 @@ export default function ThemeShowcase() {
             </div>
 
             {/* Main Content Area */}
-            <div className="flex-1 overflow-y-auto pb-24 relative transition-colors duration-300" style={{ backgroundColor: activeTheme.surface }}>
+            <div className="flex-1 overflow-hidden pb-24 relative transition-colors duration-300" style={{ backgroundColor: activeTheme.surface }}>
               
               <div className="max-w-4xl mx-auto px-8 md:px-12 py-10 pt-16">
                 {/* Header */}
