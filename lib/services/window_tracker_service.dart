@@ -26,14 +26,6 @@ class WindowTrackerService {
   }
 
   void _checkActiveWindow() {
-    final state = _ref.read(appTrackerProvider);
-    if (!state.isTrackingEnabled) {
-      if (state.activeAppId != null) {
-        _ref.read(appTrackerProvider.notifier).setActiveAppAndIncrement(null);
-      }
-      return;
-    }
-
     final windowInfo = _getActiveWindowInfo();
     if (windowInfo == null || windowInfo.processName.isEmpty) {
       _ref.read(appTrackerProvider.notifier).setActiveAppAndIncrement(null, windowTitle: null);
