@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Palette, Check, Sun, Moon, Flower2, Coffee, Leaf, Feather, Layout, Cloud } from "lucide-react";
+import { Palette, Check, Sun, Moon, Flower2, Coffee, Leaf, Feather, Layout, Cloud, User } from "lucide-react";
 
 const themes = [
   { id: "light", name: "Light", mode: "light", color: "#ffffff", surface: "#f3f4f6", accent: "#374151", icon: Sun },
@@ -150,8 +150,8 @@ export default function ThemeShowcase() {
                 </div>
 
                 {/* Profile */}
-                <div className="w-6 h-6 rounded-full bg-zinc-800 border flex items-center justify-center text-[10px] font-bold text-white mb-2" style={{ borderColor: isDark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)' }}>
-                  P
+                <div className="w-6 h-6 rounded-full bg-zinc-800 border flex items-center justify-center mb-2" style={{ borderColor: isDark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)' }}>
+                  <User className="w-3.5 h-3.5 text-zinc-400" />
                 </div>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function ThemeShowcase() {
                           <span className={`text-sm font-semibold ${isDark ? "text-zinc-200" : "text-zinc-800"}`}>Alarm Tune</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <span className="text-sm font-medium" style={{ color: activeTheme.accent }}>8-bit Rickroll</span>
+                          <span className="text-sm font-medium" style={{ color: activeTheme.accent }}>Alarm Tune</span>
                           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-30" style={{ color: isDark ? 'white' : 'black' }}><path d="m9 18 6-6-6-6"/></svg>
                         </div>
                       </div>
@@ -301,7 +301,7 @@ export default function ThemeShowcase() {
                   borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'
                 }}
               >
-                <div className="w-4 h-4 rounded-full border-2" style={{ borderColor: activeTheme.accent, borderRightColor: 'transparent', transform: 'rotate(-45deg)' }}></div>
+                <div className="w-4 h-4 rounded-full border-2" style={{ borderTopColor: activeTheme.accent, borderBottomColor: activeTheme.accent, borderLeftColor: activeTheme.accent, borderRightColor: 'transparent', transform: 'rotate(-45deg)' }}></div>
                 <span className={`text-sm font-bold tracking-widest ${isDark ? "text-white" : "text-black"}`}>25:00</span>
               </div>
             </div>
