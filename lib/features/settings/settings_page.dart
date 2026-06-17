@@ -92,7 +92,7 @@ class SettingsPage extends ConsumerWidget {
                   LucideIcons.music,
                   'Alarm Tune',
                   settings.alarmAudioPath == null 
-                    ? '8-bit Rickroll' 
+                    ? 'Alarm Tune' 
                     : settings.alarmAudioPath == 'system' 
                       ? 'System Notification' 
                       : settings.alarmAudioPath!.split(r'\').last.split('/').last,
@@ -313,7 +313,7 @@ class SettingsPage extends ConsumerWidget {
           children: [
             ListTile(
               leading: Icon(LucideIcons.music, color: theme.primaryColor, size: 20),
-              title: Text('8-bit Rickroll (Default)', style: TextStyle(color: theme.textTheme.bodyMedium?.color)),
+              title: Text('Alarm Tune (Default)', style: TextStyle(color: theme.textTheme.bodyMedium?.color)),
               trailing: currentPath == null ? Icon(LucideIcons.check, color: theme.primaryColor) : null,
               onTap: () {
                 ref.read(settingsProvider.notifier).setAlarmAudioPath(null);
