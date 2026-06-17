@@ -101,7 +101,7 @@ export default function InteractiveShowcase() {
           </div>
 
           {/* Right Side: Image Preview */}
-          <div className="w-full xl:w-1/2 relative h-[500px] xl:h-[600px] rounded-[2rem] border border-white/10 bg-kaizen-surface/50 backdrop-blur-xl overflow-hidden shadow-2xl ring-1 ring-white/5 mt-8 xl:mt-0">
+          <div className="w-full xl:w-1/2 relative aspect-[16/9] rounded-[2rem] border border-white/10 bg-kaizen-surface/50 backdrop-blur-xl overflow-hidden shadow-2xl ring-1 ring-white/5 mt-8 xl:mt-0">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-kaizen-purple/10 blur-[100px] rounded-full pointer-events-none" />
             
             <AnimatePresence mode="wait">

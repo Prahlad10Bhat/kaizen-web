@@ -57,7 +57,7 @@ export default function ProductPreview() {
             </div>
           </div>
 
-          <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[650px] bg-kaizen-surface rounded-[2rem] border border-white/5 p-4 shadow-2xl overflow-hidden flex flex-col">
+          <div className="relative w-full aspect-[16/9] bg-kaizen-surface rounded-[2rem] border border-white/5 p-4 shadow-2xl overflow-hidden flex flex-col">
             <div className="absolute inset-0 bg-gradient-to-br from-kaizen-purple/5 to-transparent pointer-events-none"></div>
             
             {/* Window header */}
