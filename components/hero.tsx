@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { Download, Play, Shield, WifiOff, Globe as GitHubIcon, Sparkles } from "lucide-react";
 import Image from "next/image";
+import { useLatestRelease } from "@/hooks/use-latest-release";
 
 export default function Hero() {
+  const { downloadUrl } = useLatestRelease();
   return (
     <section className="relative min-h-[90vh] pt-32 pb-20 overflow-hidden flex items-center">
       {/* Background glow */}
@@ -36,10 +38,13 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mb-16 w-full sm:w-auto">
-            <button className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)]">
+            <a
+              href={downloadUrl}
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)]"
+            >
               <Download className="w-4 h-4" />
               Download for Windows
-            </button>
+            </a>
             <button className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-transparent text-white font-semibold text-sm border border-white/20 hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
               <Play className="w-4 h-4" />
               Watch Demo

@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react";
 import { Download, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLatestRelease } from "@/hooks/use-latest-release";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const { downloadUrl } = useLatestRelease();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,10 +47,13 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="px-5 py-2.5 rounded-full bg-kaizen-purple text-white text-sm font-medium hover:bg-kaizen-purple-light transition-colors flex items-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)]">
+          <a
+            href={downloadUrl}
+            className="px-5 py-2.5 rounded-full bg-kaizen-purple text-white text-sm font-medium hover:bg-kaizen-purple-light transition-colors flex items-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)]"
+          >
             Download for Windows
             <Download className="w-4 h-4" />
-          </button>
+          </a>
         </div>
       </div>
     </header>
