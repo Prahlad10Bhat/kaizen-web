@@ -116,13 +116,36 @@ export default function InteractiveShowcase() {
                 <div className="relative w-full h-full rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-black/40">
                   <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/50 to-transparent z-10"></div>
                   
-                  <Image
-                    src={features[activeIndex].image}
-                    alt={features[activeIndex].title}
-                    fill
-                    className="object-cover object-top opacity-90"
-                    priority
-                  />
+                  {activeFeature === "more" ? (
+                    <div className="w-full h-full grid grid-cols-2 gap-3 p-3 bg-zinc-950/40">
+                      {[
+                        { src: "/images/canvas.jpeg", title: "Canvas" },
+                        { src: "/images/box_clock.jpeg", title: "BoxClock" },
+                        { src: "/images/workouts.jpeg", title: "Workouts" },
+                        { src: "/images/screentime.jpeg", title: "App Tracker" },
+                      ].map((item, index) => (
+                        <div key={index} className="relative w-full h-full rounded-lg overflow-hidden border border-white/5 group bg-zinc-900/50 shadow-inner">
+                          <Image
+                            src={item.src}
+                            alt={item.title}
+                            fill
+                            className="object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-102 transition-all duration-300"
+                          />
+                          <div className="absolute bottom-2 left-2 px-2.5 py-1 rounded bg-black/75 border border-white/10 text-[10px] font-bold text-white shadow-md backdrop-blur-sm">
+                            {item.title}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <Image
+                      src={features[activeIndex].image}
+                      alt={features[activeIndex].title}
+                      fill
+                      className="object-cover object-top opacity-90"
+                      priority
+                    />
+                  )}
                 </div>
               </motion.div>
             </AnimatePresence>
