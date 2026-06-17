@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const tabs = [
-  { id: "Notes", image: "/images/notes.png" },
-  { id: "Tasks", image: "/images/tasks.png" },
-  { id: "Habits", image: "/images/dashboard.png" }, // Using dashboard as placeholder
-  { id: "Calendar", image: "/images/dashboard.png" }, // Using dashboard as placeholder
-  { id: "AI", image: "/images/dashboard.png" }, // Using dashboard as placeholder
+  { id: "Notes", image: "/images/notes.jpeg" },
+  { id: "Tasks", image: "/images/tasks.jpeg" },
+  { id: "Habits", image: "/images/habit_tracker.jpeg" },
+  { id: "Calendar", image: "/images/calendar.jpeg" },
+  { id: "AI", image: "/images/dashboard.jpeg" }, // Using dashboard.jpeg as placeholder
 ];
 
 export default function ProductPreview() {

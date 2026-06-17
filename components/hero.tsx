@@ -80,7 +80,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className="absolute top-10 right-[-100px] w-[500px] rounded-xl border border-white/10 bg-black/40 shadow-2xl overflow-hidden ring-1 ring-white/5 z-10"
           >
-            <Image src="/images/tasks.png" alt="Tasks" width={800} height={500} className="w-full object-cover opacity-80" />
+            <Image src="/images/tasks.jpeg" alt="Tasks" width={800} height={500} className="w-full object-cover opacity-80" />
           </motion.div>
 
           {/* Middle image (Notes) */}
@@ -90,7 +90,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="absolute top-32 right-[-20px] w-[600px] rounded-xl border border-white/10 bg-black/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden ring-1 ring-white/10 z-20"
           >
-            <Image src="/images/notes.png" alt="Notes" width={800} height={500} className="w-full object-cover" />
+            <Image src="/images/notes.jpeg" alt="Notes" width={800} height={500} className="w-full object-cover" />
           </motion.div>
 
           {/* Front image (Dashboard) */}
@@ -101,7 +101,7 @@ export default function Hero() {
             className="absolute top-10 left-0 w-[700px] rounded-2xl border border-white/10 bg-kaizen-surface/90 backdrop-blur-md shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden ring-1 ring-white/20 z-30"
           >
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-            <Image src="/images/dashboard.png" alt="Dashboard" width={1000} height={600} className="w-full object-cover" priority />
+            <Image src="/images/dashboard.jpeg" alt="Dashboard" width={1000} height={600} className="w-full object-cover" priority />
           </motion.div>
         </div>
 
