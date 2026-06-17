@@ -1,0 +1,647 @@
+﻿Analyzing lib...
+
+  error - features\canvas\canvas_dashboard.dart:133:9 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_dashboard.dart:133:9 - Expected to find ']'. - expected_token
+  error - features\canvas\canvas_dashboard.dart:461:15 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\canvas\canvas_dashboard.dart:472:17 - Undefined name 'child'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\canvas\canvas_dashboard.dart:472:22 - Expected to find ']'. - expected_token
+  error - features\canvas\canvas_dashboard.dart:490:5 - The named parameter 'items' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\canvas\canvas_dashboard.dart:492:25 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_dashboard.dart:492:26 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_dashboard.dart:492:26 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\canvas_dashboard.dart:532:7 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_dashboard.dart:532:8 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_dashboard.dart:532:8 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_dashboard.dart:532:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\canvas_dashboard.dart:533:5 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_dashboard.dart:533:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\canvas_editor.dart:380:15 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_editor.dart:380:16 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_editor.dart:380:16 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\canvas_editor.dart:401:15 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_editor.dart:401:16 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_editor.dart:401:16 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\canvas_editor.dart:452:31 - The named parameter 'hoverColor' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'hoverColor'. - undefined_named_parameter
+  error - features\canvas\canvas_editor.dart:453:31 - The named parameter 'leading' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'leading'. - undefined_named_parameter
+  error - features\canvas\canvas_editor.dart:461:31 - The named parameter 'title' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'title'. - undefined_named_parameter
+  error - features\canvas\canvas_editor.dart:465:31 - The named parameter 'subtitle' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'subtitle'. - undefined_named_parameter
+  error - features\canvas\canvas_editor.dart:476:31 - The named parameter 'onTap' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'onTap'. - undefined_named_parameter
+  error - features\canvas\canvas_editor.dart:480:29 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_editor.dart:480:30 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_editor.dart:480:30 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_editor.dart:480:30 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\canvas_editor.dart:481:27 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_editor.dart:481:27 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\canvas_editor.dart:487:15 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_editor.dart:487:16 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_editor.dart:487:16 - Expected to find ';'. - expected_token
+  error - features\canvas\canvas_editor.dart:487:16 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\canvas_editor.dart:488:13 - Expected an identifier. - missing_identifier
+  error - features\canvas\canvas_editor.dart:488:13 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\widgets\canvas_toolbar.dart:29:9 - The named parameter 'title' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'title'. - undefined_named_parameter
+  error - features\canvas\widgets\canvas_toolbar.dart:36:9 - The named parameter 'content' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'content'. - undefined_named_parameter
+  error - features\canvas\widgets\canvas_toolbar.dart:52:9 - The named parameter 'actions' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'actions'. - undefined_named_parameter
+  error - features\canvas\widgets\canvas_toolbar.dart:58:7 - Expected to find ';'. - expected_token
+  error - features\canvas\widgets\canvas_toolbar.dart:58:8 - Expected an identifier. - missing_identifier
+  error - features\canvas\widgets\canvas_toolbar.dart:58:8 - Expected to find ';'. - expected_token
+  error - features\canvas\widgets\canvas_toolbar.dart:58:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\canvas\widgets\canvas_toolbar.dart:59:5 - Expected an identifier. - missing_identifier
+  error - features\canvas\widgets\canvas_toolbar.dart:59:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\habits\habits_page.dart:334:23 - Expected to find ']'. - expected_token
+  error - features\habits\habits_page.dart:337:17 - Expected an identifier. - missing_identifier
+  error - features\habits\habits_page.dart:337:17 - Expected to find ')'. - expected_token
+  error - features\habits\habits_page.dart:348:19 - Expected to find ']'. - expected_token
+  error - features\habits\habits_page.dart:349:17 - Expected an identifier. - missing_identifier
+  error - features\habits\habits_page.dart:349:17 - Expected to find ')'. - expected_token
+  error - features\habits\habits_page.dart:376:13 - Expected to find ';'. - expected_token
+  error - features\habits\habits_page.dart:376:14 - Expected an identifier. - missing_identifier
+  error - features\habits\habits_page.dart:376:14 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\habits\habits_page.dart:377:11 - Expected to find ';'. - expected_token
+  error - features\habits\habits_page.dart:377:11 - Expected to find '}'. - expected_token
+  error - features\habits\habits_page.dart:377:12 - Expected an identifier. - missing_identifier
+  error - features\habits\habits_page.dart:377:12 - Expected to find ';'. - expected_token
+  error - features\habits\habits_page.dart:377:12 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\habits\habits_page.dart:378:9 - Expected an identifier. - missing_identifier
+  error - features\habits\habits_page.dart:378:9 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\habits\habits_page.dart:380:5 - Expected a class member. Try placing this code inside a class member. - expected_class_member
+  error - features\habits\habits_page.dart:380:6 - Expected a class member. Try placing this code inside a class member. - expected_class_member
+  error - features\habits\habits_page.dart:705:15 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\habits\habits_page.dart:716:17 - Undefined name 'child'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\habits\habits_page.dart:716:22 - Expected to find ']'. - expected_token
+  error - features\habits\habits_page.dart:884:11 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\habits\habits_page.dart:890:15 - The named parameter 'elevation' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'elevation'. - undefined_named_parameter
+  error - features\habits\habits_page.dart:892:13 - Undefined name 'child'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\habits\habits_page.dart:892:18 - Expected to find ']'. - expected_token
+  error - features\habits\habits_page.dart:1559:1 - Expected a method, getter, setter or operator declaration. This appears to be incomplete code. Try removing it or completing it. - expected_executable
+  error - features\home\home_page.dart:372:29 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\home\home_page.dart:553:72 - The name 'Note' isn't a type, so it can't be used as a type argument. Try correcting the name to an existing type, or defining a type named 'Note'. - non_type_as_type_argument
+  error - features\home\home_page.dart:595:38 - The property 'updatedAt' can't be unconditionally accessed because the receiver can be 'null'. Try making the access conditional (using '?.') or adding a null check to the target ('!'). - unchecked_use_of_nullable_value
+  error - features\home\home_page.dart:595:60 - The property 'updatedAt' can't be unconditionally accessed because the receiver can be 'null'. Try making the access conditional (using '?.') or adding a null check to the target ('!'). - unchecked_use_of_nullable_value
+  error - features\home\home_page.dart:1071:45 - Undefined class 'Note'. Try changing the name to the name of an existing class, or creating a class with the name 'Note'. - undefined_class
+  error - features\notes\notes_page.dart:289:15 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\notes\notes_page.dart:300:17 - Undefined name 'child'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:300:22 - Expected to find ']'. - expected_token
+  error - features\notes\notes_page.dart:498:43 - Undefined name '_dialogViewProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:566:16 - Undefined name '_dialogViewProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:606:35 - Undefined name '_dialogViewProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:669:43 - Undefined name '_dialogViewProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:735:26 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\notes\notes_page.dart:745:23 - The named parameter 'elevation' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'elevation'. - undefined_named_parameter
+  error - features\notes\notes_page.dart:747:21 - The argument for the named parameter 'child' was already specified. Try removing one of the named arguments, or correcting one of the names to reference a different named parameter. - duplicate_named_argument
+  error - features\notes\notes_page.dart:749:17 - Expected to find ']'. - expected_token
+  error - features\notes\notes_page.dart:750:15 - Expected to find ')'. - expected_token
+  error - features\notes\notes_page.dart:752:11 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:752:12 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:752:12 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:753:23 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:753:24 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:753:24 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:754:174 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:754:175 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:754:175 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:755:23 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:755:24 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:755:24 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:797:59 - Undefined name '_dialogViewProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:812:11 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:812:12 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:812:12 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:812:12 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:813:9 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:813:9 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:813:9 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:813:10 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:813:10 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:813:10 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:814:7 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:814:7 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:814:7 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:814:8 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:814:8 - Expected to find ';'. - expected_token
+  error - features\notes\notes_page.dart:814:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:815:5 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:815:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\notes\notes_page.dart:833:45 - Undefined name '_dialogViewProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:894:22 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\notes\notes_page.dart:898:30 - Undefined name '_dialogViewProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:905:19 - The named parameter 'elevation' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'elevation'. - undefined_named_parameter
+  error - features\notes\notes_page.dart:907:17 - The argument for the named parameter 'child' was already specified. Try removing one of the named arguments, or correcting one of the names to reference a different named parameter. - duplicate_named_argument
+  error - features\notes\notes_page.dart:909:13 - Expected an identifier. - missing_identifier
+  error - features\notes\notes_page.dart:909:13 - Expected to find ']'. - expected_token
+  error - features\notes\notes_page.dart:1030:15 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\notes\notes_page.dart:1039:19 - The named parameter 'elevation' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'elevation'. - undefined_named_parameter
+  error - features\notes\notes_page.dart:1041:17 - Undefined name 'child'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\notes_page.dart:1041:22 - Expected to find ']'. - expected_token
+  error - features\notes\widgets\note_editor.dart:28:9 - Undefined class 'Note'. Try changing the name to the name of an existing class, or creating a class with the name 'Note'. - undefined_class
+  error - features\notes\widgets\note_editor.dart:75:14 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:90:20 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:114:18 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:253:30 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:268:30 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:270:28 - Undefined name 'selectedNoteIdProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:368:53 - Undefined name 'tagsProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:382:50 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:460:48 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:684:38 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:684:101 - The method 'Wrapped' isn't defined for the type '_NoteEditorState'. Try correcting the name to the name of an existing method, or defining a method named 'Wrapped'. - undefined_method
+  error - features\notes\widgets\note_editor.dart:780:28 - Undefined name 'tagsProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:838:35 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\notes\widgets\note_editor.dart:838:98 - The method 'Wrapped' isn't defined for the type '_NoteEditorState'. Try correcting the name to the name of an existing method, or defining a method named 'Wrapped'. - undefined_method
+  error - features\profile\profile_page.dart:356:13 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\profile\profile_page.dart:371:15 - Undefined name 'child'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\profile\profile_page.dart:371:20 - Expected to find ']'. - expected_token
+  error - features\settings\feedback_page.dart:167:32 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\settings\feedback_page.dart:174:29 - The named parameter 'elevation' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'elevation'. - undefined_named_parameter
+  error - features\settings\feedback_page.dart:176:27 - The argument for the named parameter 'child' was already specified. Try removing one of the named arguments, or correcting one of the names to reference a different named parameter. - duplicate_named_argument
+  error - features\settings\feedback_page.dart:196:23 - Expected an identifier. - missing_identifier
+  error - features\settings\feedback_page.dart:196:23 - Expected to find ']'. - expected_token
+  error - features\settings\settings_page.dart:291:23 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:291:24 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:291:24 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:295:15 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:295:16 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:295:16 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:295:16 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:296:13 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:296:13 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:318:15 - Undefined name 'onTap'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - features\settings\settings_page.dart:318:20 - Expected to find ')'. - expected_token
+  error - features\settings\settings_page.dart:318:20 - Expected to find ']'. - expected_token
+  error - features\settings\settings_page.dart:323:13 - Too many positional arguments: 0 expected, but 1 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - features\settings\settings_page.dart:327:15 - The named parameter 'onTap' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'onTap'. - undefined_named_parameter
+  error - features\settings\settings_page.dart:332:13 - Too many positional arguments: 0 expected, but 1 found. Try removing the extra positional arguments, or specifying the name for named arguments. - extra_positional_arguments_could_be_named
+  error - features\settings\settings_page.dart:336:15 - The named parameter 'onTap' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'onTap'. - undefined_named_parameter
+  error - features\settings\settings_page.dart:347:13 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:347:14 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:347:14 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:347:14 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:348:11 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:348:11 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:348:11 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:348:12 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:348:12 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:348:12 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:349:9 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:349:9 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:349:9 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:349:10 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:349:10 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:349:10 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:350:7 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:350:7 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:350:7 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:350:8 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:350:8 - Expected to find ';'. - expected_token
+  error - features\settings\settings_page.dart:350:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\settings\settings_page.dart:351:5 - Expected an identifier. - missing_identifier
+  error - features\settings\settings_page.dart:351:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\tasks\widgets\task_card.dart:37:5 - The named parameter 'items' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\tasks\widgets\task_card.dart:41:9 - The named parameter 'side' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'side'. - undefined_named_parameter
+  error - features\tasks\widgets\task_card.dart:42:7 - Expected to find ';'. - expected_token
+  error - features\tasks\widgets\task_card.dart:42:8 - Expected an identifier. - missing_identifier
+  error - features\tasks\widgets\task_card.dart:42:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\tasks\widgets\task_card.dart:68:7 - Expected to find ';'. - expected_token
+  error - features\tasks\widgets\task_card.dart:68:8 - Expected an identifier. - missing_identifier
+  error - features\tasks\widgets\task_card.dart:68:8 - Expected to find ';'. - expected_token
+  error - features\tasks\widgets\task_card.dart:68:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\tasks\widgets\task_card.dart:69:5 - Expected an identifier. - missing_identifier
+  error - features\tasks\widgets\task_card.dart:69:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\tasks\widgets\task_card.dart:230:21 - The named parameter 'side' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'side'. - undefined_named_parameter
+  error - features\tasks\widgets\task_card.dart:233:15 - Expected an identifier. - missing_identifier
+  error - features\tasks\widgets\task_card.dart:233:15 - Expected to find ']'. - expected_token
+  error - features\workout\widgets\exercise_bottom_sheet.dart:201:26 - The named parameter 'label' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\workout\widgets\exercise_bottom_sheet.dart:201:26 - The named parameter 'onPressed' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\workout\widgets\exercise_bottom_sheet.dart:207:21 - The named parameter 'onPressed' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'onPressed'. - undefined_named_parameter
+  error - features\workout\widgets\exercise_bottom_sheet.dart:209:103 - The named parameter 'style' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'style'. - undefined_named_parameter
+  error - features\workout\widgets\exercise_bottom_sheet.dart:209:177 - Expected to find ')'. - expected_token
+  error - features\workout\widgets\exercise_bottom_sheet.dart:213:19 - Expected to find ';'. - expected_token
+  error - features\workout\widgets\exercise_bottom_sheet.dart:213:20 - Expected an identifier. - missing_identifier
+  error - features\workout\widgets\exercise_bottom_sheet.dart:213:20 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\widgets\exercise_bottom_sheet.dart:214:17 - Expected to find '}'. - expected_token
+  error - features\workout\workout_page.dart:257:21 - Expected to find ']'. - expected_token
+  error - features\workout\workout_page.dart:258:19 - Expected to find ')'. - expected_token
+  error - features\workout\workout_page.dart:258:19 - Expected to find ']'. - expected_token
+  error - features\workout\workout_page.dart:287:19 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:287:19 - Expected to find ')'. - expected_token
+  error - features\workout\workout_page.dart:313:19 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:313:19 - Expected to find ')'. - expected_token
+  error - features\workout\workout_page.dart:376:15 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:376:18 - Expected to find ','. - expected_token
+  error - features\workout\workout_page.dart:526:13 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:526:13 - Expected to find ')'. - expected_token
+  error - features\workout\workout_page.dart:527:11 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:527:12 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:527:12 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:527:12 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:528:9 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:528:9 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:528:9 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:528:10 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:528:10 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:528:10 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:529:7 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:529:7 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:529:7 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:529:8 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:529:8 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:529:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:530:5 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:530:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:778:5 - The named parameter 'items' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\workout\workout_page.dart:781:41 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:781:42 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:781:42 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:826:7 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:826:8 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:826:8 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:826:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:827:5 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:827:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:827:7 - The static method or constructor 'then' isn't defined for the context type '_'. Try correcting the name to the name of an existing static method or constructor, or defining a static method or constructor named 'then'. - dot_shorthand_undefined_member
+  error - features\workout\workout_page.dart:842:5 - The named parameter 'items' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\workout\workout_page.dart:845:41 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:845:42 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:845:42 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:857:7 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:857:8 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:857:8 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:857:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:858:5 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:858:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:858:7 - The static method or constructor 'then' isn't defined for the context type '_'. Try correcting the name to the name of an existing static method or constructor, or defining a static method or constructor named 'then'. - dot_shorthand_undefined_member
+  error - features\workout\workout_page.dart:985:27 - The named parameter 'tileColor' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'tileColor'. - undefined_named_parameter
+  error - features\workout\workout_page.dart:986:27 - The named parameter 'leading' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'leading'. - undefined_named_parameter
+  error - features\workout\workout_page.dart:994:27 - The named parameter 'title' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'title'. - undefined_named_parameter
+  error - features\workout\workout_page.dart:1002:27 - The named parameter 'subtitle' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'subtitle'. - undefined_named_parameter
+  error - features\workout\workout_page.dart:1012:27 - The named parameter 'trailing' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'trailing'. - undefined_named_parameter
+  error - features\workout\workout_page.dart:1014:23 - Expected to find ';'. - expected_token
+  error - features\workout\workout_page.dart:1014:24 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:1014:24 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - features\workout\workout_page.dart:1977:22 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - features\workout\workout_page.dart:1988:19 - The named parameter 'elevation' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'elevation'. - undefined_named_parameter
+  error - features\workout\workout_page.dart:1990:17 - The argument for the named parameter 'child' was already specified. Try removing one of the named arguments, or correcting one of the names to reference a different named parameter. - duplicate_named_argument
+  error - features\workout\workout_page.dart:1993:11 - Expected an identifier. - missing_identifier
+  error - features\workout\workout_page.dart:1993:11 - Expected to find ']'. - expected_token
+  error - layout\app_layout.dart:135:9 - The named parameter 'title' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'title'. - undefined_named_parameter
+  error - layout\app_layout.dart:136:9 - The named parameter 'content' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'content'. - undefined_named_parameter
+  error - layout\app_layout.dart:148:9 - The named parameter 'actions' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'actions'. - undefined_named_parameter
+  error - layout\app_layout.dart:153:11 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - layout\app_layout.dart:163:13 - Undefined name 'child'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\app_layout.dart:163:18 - Expected to find ']'. - expected_token
+  error - layout\app_layout.dart:166:7 - Expected to find ';'. - expected_token
+  error - layout\app_layout.dart:166:8 - Expected an identifier. - missing_identifier
+  error - layout\app_layout.dart:166:8 - Expected to find ';'. - expected_token
+  error - layout\app_layout.dart:166:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - layout\app_layout.dart:167:5 - Expected an identifier. - missing_identifier
+  error - layout\app_layout.dart:167:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - layout\app_layout.dart:222:45 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\app_layout.dart:223:34 - Undefined name 'selectedNoteIdProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\app_layout.dart:395:66 - Undefined name 'selectedNoteIdProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\app_layout.dart:399:57 - Undefined name 'selectedNoteIdProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\app_layout.dart:401:54 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\app_layout.dart:407:44 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\app_layout.dart:410:40 - Undefined name 'selectedNoteIdProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\command_palette.dart:139:29 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\command_palette.dart:154:20 - Undefined name 'selectedNoteIdProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - layout\command_palette.dart:189:20 - Undefined name 'selectedNoteIdProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - services\app_tour_service.dart:554:30 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - services\app_tour_service.dart:567:27 - The named parameter 'padding' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'padding'. - undefined_named_parameter
+  error - services\app_tour_service.dart:569:25 - The argument for the named parameter 'child' was already specified. Try removing one of the named arguments, or correcting one of the names to reference a different named parameter. - duplicate_named_argument
+  error - services\app_tour_service.dart:577:21 - Expected an identifier. - missing_identifier
+  error - services\app_tour_service.dart:577:21 - Expected to find ']'. - expected_token
+  error - services\voice_command_service.dart:323:14 - Undefined name 'notesProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - services\voice_command_service.dart:483:14 - Undefined name 'noteSearchQueryProvider'. Try correcting the name to one that is defined, or defining the name. - undefined_identifier
+  error - theme\app_theme.dart:75:11 - The named parameter 'side' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'side'. - undefined_named_parameter
+  error - theme\app_theme.dart:77:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:77:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:77:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:81:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:81:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:81:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:105:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:105:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:105:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:128:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:128:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:128:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:147:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:147:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:147:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:151:11 - The named parameter 'side' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'side'. - undefined_named_parameter
+  error - theme\app_theme.dart:152:9 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:152:10 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:152:10 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:152:10 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:153:7 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:153:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:153:7 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:153:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:153:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:155:9 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:155:10 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:155:10 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:156:75 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:156:79 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:156:79 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:162:10 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:162:11 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:162:11 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:163:57 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:163:58 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:163:58 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:163:58 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:164:7 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:164:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:164:7 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:164:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:164:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:181:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:181:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:181:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:193:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:193:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:193:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:196:7 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:196:8 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:196:8 - Expected to find ';'. - expected_token
+  error - theme\app_theme.dart:196:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - theme\app_theme.dart:197:5 - Expected an identifier. - missing_identifier
+  error - theme\app_theme.dart:197:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - utils\snackbar_utils.dart:29:9 - The named parameter 'duration' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'duration'. - undefined_named_parameter
+  error - utils\snackbar_utils.dart:30:9 - The named parameter 'elevation' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'elevation'. - undefined_named_parameter
+  error - utils\snackbar_utils.dart:31:7 - Expected to find ';'. - expected_token
+  error - utils\snackbar_utils.dart:31:8 - Expected an identifier. - missing_identifier
+  error - utils\snackbar_utils.dart:31:8 - Expected to find ';'. - expected_token
+  error - utils\snackbar_utils.dart:31:8 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - utils\snackbar_utils.dart:32:5 - Expected an identifier. - missing_identifier
+  error - utils\snackbar_utils.dart:32:5 - Unexpected text ';'. Try removing the text. - unexpected_token
+  error - widgets\changelog_dialog.dart:138:24 - The named parameter 'child' is required, but there's no corresponding argument. Try adding the required argument. - missing_required_argument
+  error - widgets\changelog_dialog.dart:143:21 - The named parameter 'elevation' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'elevation'. - undefined_named_parameter
+  error - widgets\changelog_dialog.dart:145:19 - The argument for the named parameter 'child' was already specified. Try removing one of the named arguments, or correcting one of the names to reference a different named parameter. - duplicate_named_argument
+  error - widgets\changelog_dialog.dart:151:13 - Expected an identifier. - missing_identifier
+  error - widgets\changelog_dialog.dart:151:13 - Expected to find ']'. - expected_token
+warning - features\ai\ai_page.dart:10:8 - Unused import: '../../theme/app_colors.dart'. Try removing the import directive. - unused_import
+warning - features\ai\ai_page.dart:13:8 - Unused import: '../../providers/settings_provider.dart'. Try removing the import directive. - unused_import
+warning - features\app_tracker\app_tracker_page.dart:4:8 - Unused import: 'package:lucide_icons/lucide_icons.dart'. Try removing the import directive. - unused_import
+warning - features\app_tracker\app_tracker_page.dart:8:8 - Unused import: 'package:uuid/uuid.dart'. Try removing the import directive. - unused_import
+warning - features\app_tracker\app_tracker_page.dart:88:11 - The value of the local variable 'state' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\app_tracker\widgets\activity_timeline.dart:6:8 - Unused import: 'package:lucide_icons/lucide_icons.dart'. Try removing the import directive. - unused_import
+warning - features\app_tracker\widgets\live_tracking_card.dart:53:9 - The value of the local variable 'totalAppSecs' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\app_tracker\widgets\top_apps_list.dart:4:8 - Unused import: 'package:lucide_icons/lucide_icons.dart'. Try removing the import directive. - unused_import
+warning - features\boxclock\boxclock_page.dart:64:11 - The value of the local variable 'appColors' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\calendar\calendar_page.dart:12:8 - Unused import: '../../widgets/avatar_stack.dart'. Try removing the import directive. - unused_import
+warning - features\calendar\calendar_page.dart:14:8 - Unused import: '../../providers/navigation_provider.dart'. Try removing the import directive. - unused_import
+warning - features\calendar\calendar_page.dart:60:11 - The value of the local variable 'appColors' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\calendar\calendar_page.dart:363:11 - The value of the local variable 'appColors' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\calendar\calendar_page.dart:1110:10 - The declaration '_buildEventItem' isn't referenced. Try removing the declaration of '_buildEventItem'. - unused_element
+warning - features\calendar\calendar_page.dart:1165:11 - The value of the local variable 'activeCalendar' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\calendar\calendar_page.dart:1395:10 - The declaration '_buildMiniCalendar' isn't referenced. Try removing the declaration of '_buildMiniCalendar'. - unused_element
+warning - features\calendar\calendar_page.dart:1416:18 - The value of the local variable 'isCurrentMonth' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\calendar\calendar_page.dart:1483:11 - The value of the local variable 'appColors' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\calendar\calendar_page.dart:1562:11 - The value of the local variable 'appColors' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\calendar\calendar_page.dart:1982:10 - The declaration '_buildLeftCalendarsSidebar' isn't referenced. Try removing the declaration of '_buildLeftCalendarsSidebar'. - unused_element
+warning - features\calendar\widgets\calendar_check_item.dart:7:8 - Unused import: '../../../models/calendar.dart'. Try removing the import directive. - unused_import
+warning - features\calendar\widgets\calendar_check_item.dart:28:11 - The value of the local variable 'appColors' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\calendar\widgets\calendar_focus_widget.dart:7:8 - Unused import: '../../../models/calendar.dart'. Try removing the import directive. - unused_import
+warning - features\calendar\widgets\calendar_focus_widget.dart:9:8 - Unused import: '../../../theme/app_colors.dart'. Try removing the import directive. - unused_import
+warning - features\calendar\widgets\calendar_grid.dart:4:8 - Unused import: 'package:lucide_icons/lucide_icons.dart'. Try removing the import directive. - unused_import
+warning - features\calendar\widgets\calendar_right_sidebar.dart:8:8 - Unused import: '../../../models/calendar.dart'. Try removing the import directive. - unused_import
+warning - features\canvas\canvas_dashboard.dart:363:11 - The value of the local variable 'theme' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\canvas\canvas_dashboard.dart:488:11 - The value of the local variable 'theme' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\canvas\canvas_dashboard.dart:493:7 - The label 'items' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - features\canvas\canvas_editor.dart:380:16 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\canvas\canvas_editor.dart:381:15 - The label 'title' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - features\canvas\canvas_editor.dart:402:15 - The label 'content' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - features\canvas\controllers\canvas_controller.dart:636:11 - The value of the local variable 'existingEdges' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\canvas\widgets\context_menu.dart:2:8 - Unused import: 'package:lucide_icons/lucide_icons.dart'. Try removing the import directive. - unused_import
+warning - features\canvas\widgets\infinite_canvas.dart:152:11 - The value of the local variable 'selectedIds' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\canvas\widgets\infinite_canvas.dart:192:11 - The value of the local variable 'currentSelectedEdgeIds' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\canvas\widgets\node_widget.dart:477:8 - The declaration '_showContextMenu' isn't referenced. Try removing the declaration of '_showContextMenu'. - unused_element
+warning - features\canvas\widgets\node_widget.dart:1083:46 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\canvas\widgets\node_widget.dart:1084:47 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\canvas\widgets\node_widget.dart:1086:92 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\canvas\widgets\node_widget.dart:1089:94 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\canvas\widgets\node_widget.dart:1092:52 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\canvas\widgets\node_widget.dart:1103:49 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\habits\habits_page.dart:281:11 - The value of the local variable 'ideas' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\habits\habits_page.dart:284:11 - The value of the local variable 'appColors' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\habits\habits_page.dart:377:12 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\habits\habits_page.dart:383:10 - The declaration '_buildMobileOverview' isn't referenced. Try removing the declaration of '_buildMobileOverview'. - unused_element
+warning - features\habits\habits_page.dart:548:10 - The declaration '_buildWeeklySummarySection' isn't referenced. Try removing the declaration of '_buildWeeklySummarySection'. - unused_element
+warning - features\habits\habits_page.dart:852:10 - The declaration '_buildEmptyState' isn't referenced. Try removing the declaration of '_buildEmptyState'. - unused_element
+warning - features\habits\habits_page.dart:899:10 - The declaration '_buildSuggestionsSection' isn't referenced. Try removing the declaration of '_buildSuggestionsSection'. - unused_element
+warning - features\habits\habits_page.dart:980:10 - The declaration '_buildOverviewCards' isn't referenced. Try removing the declaration of '_buildOverviewCards'. - unused_element
+warning - features\habits\habits_page.dart:1024:10 - The declaration '_buildHabitCard' isn't referenced. Try removing the declaration of '_buildHabitCard'. - unused_element
+warning - features\home\home_page.dart:38:10 - The value of the field '_confidence' isn't used. Try removing the field, or using it. - unused_field
+warning - features\notes\notes_page.dart:752:12 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\notes\providers\notes_providers.dart:4:8 - Unused import: 'package:shared_preferences/shared_preferences.dart'. Try removing the import directive. - unused_import
+warning - features\notes\providers\notes_providers.dart:95:7 - The declaration '_dialogViewProvider' isn't referenced. Try removing the declaration of '_dialogViewProvider'. - unused_element
+warning - features\profile\profile_page.dart:72:11 - The value of the local variable 'appColors' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\profile\profile_page.dart:411:10 - The declaration '_buildSectionCard' isn't referenced. Try removing the declaration of '_buildSectionCard'. - unused_element
+warning - features\profile\profile_page.dart:431:10 - The declaration '_buildSettingRow' isn't referenced. Try removing the declaration of '_buildSettingRow'. - unused_element
+warning - features\profile\profile_page.dart:456:8 - The declaration '_showThemeDialog' isn't referenced. Try removing the declaration of '_showThemeDialog'. - unused_element
+warning - features\profile\profile_page.dart:480:8 - The declaration '_showLanguageDialog' isn't referenced. Try removing the declaration of '_showLanguageDialog'. - unused_element
+warning - features\profile\profile_page.dart:506:10 - The declaration '_buildInfoRow' isn't referenced. Try removing the declaration of '_buildInfoRow'. - unused_element
+warning - features\settings\feedback_page.dart:3:8 - Unused import: 'package:lucide_icons/lucide_icons.dart'. Try removing the import directive. - unused_import
+warning - features\settings\settings_page.dart:26:11 - The value of the local variable 'colorScheme' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\settings\settings_page.dart:291:24 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\settings\settings_page.dart:292:15 - The label 'onTap' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - features\tasks\task_board_page.dart:10:8 - Unused import: '../../../theme/app_colors.dart'. Try removing the import directive. - unused_import
+warning - features\tasks\task_board_page.dart:56:8 - The value of the field '_isCompactView' isn't used. Try removing the field, or using it. - unused_field
+warning - features\tasks\widgets\board_column.dart:7:8 - Unused import: '../../../theme/app_colors.dart'. Try removing the import directive. - unused_import
+warning - features\tasks\widgets\board_column.dart:10:8 - Unused import: '../../../widgets/universal_task_dialog.dart'. Try removing the import directive. - unused_import
+warning - features\tasks\widgets\task_card.dart:43:7 - The label 'items' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - features\workout\widgets\streak_calendar_widget.dart:14:11 - The value of the local variable 'theme' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - features\workout\workout_page.dart:527:12 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\workout\workout_page.dart:782:7 - The label 'items' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - features\workout\workout_page.dart:846:7 - The label 'items' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - features\workout\workout_page.dart:1014:24 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - features\workout\workout_page.dart:1043:10 - The declaration '_buildMuscleRecovery' isn't referenced. Try removing the declaration of '_buildMuscleRecovery'. - unused_element
+warning - layout\app_layout.dart:101:15 - The value of the local variable 'theme' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - layout\app_layout.dart:380:11 - The value of the local variable 'isRinging' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - layout\app_layout.dart:622:7 - This default clause is covered by the previous cases. Try removing the default clause, or restructuring the preceding patterns. - unreachable_switch_default
+warning - layout\sidebar.dart:316:10 - The declaration '_buildProjectItem' isn't referenced. Try removing the declaration of '_buildProjectItem'. - unused_element
+warning - layout\sidebar.dart:347:17 - The declaration '_getImageProvider' isn't referenced. Try removing the declaration of '_getImageProvider'. - unused_element
+warning - models\task.dart:1:8 - Unused import: 'package:flutter/material.dart'. Try removing the import directive. - unused_import
+warning - models\tracked_app.dart:1:8 - Unused import: 'dart:convert'. Try removing the import directive. - unused_import
+warning - providers\app_tracker_provider.dart:61:11 - The value of the local variable 'isEnabled' isn't used. Try removing the variable or using it. - unused_local_variable
+warning - providers\boxclock_provider.dart:4:8 - Unused import: 'package:shared_preferences/shared_preferences.dart'. Try removing the import directive. - unused_import
+warning - providers\calendar_provider.dart:3:8 - Unused import: 'package:shared_preferences/shared_preferences.dart'. Try removing the import directive. - unused_import
+warning - providers\settings_provider.dart:1:8 - Unused import: 'package:flutter/material.dart'. Try removing the import directive. - unused_import
+warning - providers\task_provider.dart:3:8 - Unused import: 'package:shared_preferences/shared_preferences.dart'. Try removing the import directive. - unused_import
+warning - providers\task_provider.dart:74:7 - The declaration '_initialTasks' isn't referenced. Try removing the declaration of '_initialTasks'. - unused_element
+warning - services\calendar_service.dart:4:8 - Unused import: 'package:path_provider/path_provider.dart'. Try removing the import directive. - unused_import
+warning - services\calendar_service.dart:5:8 - Unused import: 'package:share_plus/share_plus.dart'. Try removing the import directive. - unused_import
+warning - test_window.dart:2:8 - Unused import: 'dart:ffi'. Try removing the import directive. - unused_import
+warning - test_window.dart:5:8 - Unused import: 'dart:io'. Try removing the import directive. - unused_import
+warning - theme\app_theme.dart:77:8 - Dead code. Try removing the code, or fixing the code before it so that it can be reached. - dead_code
+warning - theme\app_theme.dart:78:7 - The label 'dividerTheme' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:82:7 - The label 'elevatedButtonTheme' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:106:7 - The label 'outlinedButtonTheme' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:129:7 - The label 'textButtonTheme' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:148:7 - The label 'dialogTheme' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:154:7 - The label 'checkboxTheme' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:156:9 - The label 'side' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:157:9 - The label 'fillColor' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:163:9 - The label 'checkColor' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:165:7 - The label 'inputDecorationTheme' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:182:7 - The label 'tooltipTheme' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - theme\app_theme.dart:194:7 - The label 'extensions' isn't used. Try removing the label, or using it in either a 'break' or 'continue' statement. - unused_label
+warning - widgets\changelog_dialog.dart:6:8 - Unused import: 'package:package_info_plus/package_info_plus.dart'. Try removing the import directive. - unused_import
+warning - widgets\media_preview.dart:3:8 - Unused import: 'package:audioplayers/audioplayers.dart'. Try removing the import directive. - unused_import
+warning - widgets\media_preview.dart:29:8 - The value of the field '_isPlaying' isn't used. Try removing the field, or using it. - unused_field
+warning - widgets\media_preview.dart:140:11 - The value of the local variable 'theme' isn't used. Try removing the variable or using it. - unused_local_variable
+   info - features\ai\ai_page.dart:189:13 - 'partialResults' is deprecated and shouldn't be used. Use SpeechListenOptions.partialResults instead. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\ai\ai_page.dart:190:13 - 'cancelOnError' is deprecated and shouldn't be used. Use SpeechListenOptions.cancelOnError instead. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\app_tracker\app_tracker_page.dart:1:8 - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive. - unnecessary_import
+   info - features\app_tracker\app_tracker_page.dart:8:8 - The imported package 'uuid' isn't a dependency of the importing package. Try adding a dependency for 'uuid' in the 'pubspec.yaml' file. - depend_on_referenced_packages
+   info - features\app_tracker\app_tracker_page.dart:54:23 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\app_tracker\widgets\activity_timeline.dart:95:26 - Unnecessary use of 'toList' in a spread. Try removing the invocation of 'toList'. - unnecessary_to_list_in_spreads
+   info - features\app_tracker\widgets\activity_timeline.dart:136:10 - The variable name '_XAxisLabel' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style. - non_constant_identifier_names
+   info - features\app_tracker\widgets\live_tracking_card.dart:108:17 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\app_tracker\widgets\top_apps_list.dart:151:16 - Unnecessary use of 'toList' in a spread. Try removing the invocation of 'toList'. - unnecessary_to_list_in_spreads
+   info - features\app_tracker\widgets\tracked_apps_table.dart:118:23 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\app_tracker\widgets\tracked_apps_table.dart:357:10 - The variable name '_HeaderCell' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style. - non_constant_identifier_names
+   info - features\boxclock\boxclock_page.dart:8:8 - The imported package 'uuid' isn't a dependency of the importing package. Try adding a dependency for 'uuid' in the 'pubspec.yaml' file. - depend_on_referenced_packages
+   info - features\boxclock\boxclock_page.dart:388:24 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
+   info - features\boxclock\boxclock_page.dart:835:27 - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\boxclock\boxclock_page.dart:836:27 - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\boxclock\boxclock_page.dart:953:31 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\boxclock\boxclock_page.dart:1040:52 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\boxclock\boxclock_page.dart:1041:58 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\boxclock\boxclock_page.dart:1042:58 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\boxclock\boxclock_page.dart:1043:56 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\boxclock\boxclock_page.dart:1298:38 - 'scale' is deprecated and shouldn't be used. Use scaleByVector3, scaleByVector4, or scaleByDouble instead. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\boxclock\boxclock_page.dart:1298:50 - 'translate' is deprecated and shouldn't be used. Use translateByVector3, translateByVector4, or translateByDouble instead. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\calendar\calendar_page.dart:587:66 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - features\calendar\calendar_page.dart:944:38 - Unnecessary use of 'toList' in a spread. Try removing the invocation of 'toList'. - unnecessary_to_list_in_spreads
+   info - features\calendar\calendar_page.dart:1315:27 - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\calendar\calendar_page.dart:1316:27 - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\calendar\widgets\calendar_right_sidebar.dart:83:27 - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\calendar\widgets\calendar_right_sidebar.dart:84:27 - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\canvas_dashboard.dart:211:31 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\canvas_dashboard.dart:439:27 - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\canvas_dashboard.dart:440:27 - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\canvas_dashboard.dart:514:19 - Unnecessary 'const' keyword. Try removing the keyword. - unnecessary_const
+   info - features\canvas\canvas_dashboard.dart:533:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\canvas\canvas_dashboard.dart:706:31 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - features\canvas\canvas_dashboard.dart:707:28 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - features\canvas\canvas_editor.dart:168:52 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - features\canvas\canvas_editor.dart:169:52 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - features\canvas\canvas_editor.dart:258:38 - 'dialogBackgroundColor' is deprecated and shouldn't be used. Use DialogThemeData.backgroundColor instead. This feature was deprecated after v3.27.0-0.1.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\canvas_editor.dart:280:23 - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\canvas_editor.dart:281:44 - 'dialogBackgroundColor' is deprecated and shouldn't be used. Use DialogThemeData.backgroundColor instead. This feature was deprecated after v3.27.0-0.1.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\canvas_editor.dart:379:75 - 'dialogBackgroundColor' is deprecated and shouldn't be used. Use DialogThemeData.backgroundColor instead. This feature was deprecated after v3.27.0-0.1.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\canvas_editor.dart:450:29 - The 'child' argument should be last in widget constructor invocations. Try moving the argument to the end of the argument list. - sort_child_properties_last
+   info - features\canvas\canvas_editor.dart:481:28 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\canvas\canvas_editor.dart:488:14 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\canvas\controllers\viewport_controller.dart:1:8 - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive. - unnecessary_import
+   info - features\canvas\models\canvas_node.dart:81:35 - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\widgets\canvas_toolbar.dart:59:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\canvas\widgets\edge_painter.dart:3:8 - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive. - unnecessary_import
+   info - features\canvas\widgets\infinite_canvas.dart:416:43 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\canvas\widgets\infinite_canvas.dart:417:49 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\canvas\widgets\infinite_canvas.dart:418:48 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\canvas\widgets\infinite_canvas.dart:471:32 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\canvas\widgets\infinite_canvas.dart:472:40 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\canvas\widgets\infinite_canvas.dart:473:39 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\canvas\widgets\node_widget.dart:859:56 - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\widgets\node_widget.dart:859:90 - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\canvas\widgets\node_widget.dart:1071:55 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\canvas\widgets\node_widget.dart:1072:63 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\canvas\widgets\node_widget.dart:1073:61 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\habits\habits_page.dart:57:22 - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\habits\habits_page.dart:378:10 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\habits\habits_page.dart:683:27 - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\habits\habits_page.dart:684:27 - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\habits\habits_page.dart:802:31 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\home\home_page.dart:38:10 - The private field _confidence could be 'final'. Try making the field 'final'. - prefer_final_fields
+   info - features\home\home_page.dart:337:13 - 'partialResults' is deprecated and shouldn't be used. Use SpeechListenOptions.partialResults instead. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\home\home_page.dart:338:13 - 'cancelOnError' is deprecated and shouldn't be used. Use SpeechListenOptions.cancelOnError instead. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\home\home_page.dart:404:32 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\home\home_page.dart:405:38 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\home\home_page.dart:406:39 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\home\home_page.dart:407:10 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\notes\notes_page.dart:40:20 - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\notes\notes_page.dart:109:70 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\notes\notes_page.dart:110:60 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\notes\notes_page.dart:111:59 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\notes\notes_page.dart:112:18 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\notes\notes_page.dart:267:27 - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\notes\notes_page.dart:268:27 - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\notes\notes_page.dart:528:25 - Use the null-aware marker '?' rather than a null check via an 'if'. Try using '?'. - use_null_aware_elements
+   info - features\notes\notes_page.dart:633:21 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\notes\notes_page.dart:815:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\notes\notes_page.dart:1372:64 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\notes\notes_page.dart:1373:54 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\notes\notes_page.dart:1374:53 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - features\notes\providers\notes_providers.dart:152:21 - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\settings\settings_page.dart:261:13 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\settings\settings_page.dart:296:14 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\settings\settings_page.dart:351:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\settings\settings_page.dart:480:42 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - features\tasks\task_board_page.dart:2:8 - The import of 'package:flutter/gestures.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive. - unnecessary_import
+   info - features\tasks\task_board_page.dart:3:8 - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive. - unnecessary_import
+   info - features\tasks\task_board_page.dart:56:8 - The private field _isCompactView could be 'final'. Try making the field 'final'. - prefer_final_fields
+   info - features\tasks\task_board_page.dart:60:15 - The private field _selectedTaskIds could be 'final'. Try making the field 'final'. - prefer_final_fields
+   info - features\tasks\task_board_page.dart:800:27 - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\tasks\task_board_page.dart:801:27 - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\tasks\task_board_page.dart:919:31 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\tasks\task_board_page.dart:1018:29 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - features\tasks\widgets\task_card.dart:40:20 - 'dialogBackgroundColor' is deprecated and shouldn't be used. Use DialogThemeData.backgroundColor instead. This feature was deprecated after v3.27.0-0.1.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\tasks\widgets\task_card.dart:69:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\tasks\widgets\task_card.dart:92:42 - 'scale' is deprecated and shouldn't be used. Use scaleByVector3, scaleByVector4, or scaleByDouble instead. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\tasks\widgets\task_card.dart:229:32 - 'dialogBackgroundColor' is deprecated and shouldn't be used. Use DialogThemeData.backgroundColor instead. This feature was deprecated after v3.27.0-0.1.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\workout\widgets\folder_card.dart:31:42 - 'scale' is deprecated and shouldn't be used. Use scaleByVector3, scaleByVector4, or scaleByDouble instead. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - features\workout\workout_page.dart:1:8 - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive. - unnecessary_import
+   info - features\workout\workout_page.dart:530:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - features\workout\workout_page.dart:975:25 - The 'child' argument should be last in widget constructor invocations. Try moving the argument to the end of the argument list. - sort_child_properties_last
+   info - features\workout\workout_page.dart:1014:25 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - layout\app_layout.dart:78:42 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - layout\app_layout.dart:94:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - layout\app_layout.dart:167:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - layout\app_layout.dart:497:23 - The 'if' statement could be replaced by a null-aware assignment. Try using the '??=' operator to conditionally assign a value. - prefer_conditional_assignment
+   info - layout\command_palette.dart:39:9 - Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter. - use_super_parameters
+   info - layout\command_palette.dart:112:24 - 'RawKeyEvent' is deprecated and shouldn't be used. Use KeyEvent instead. This feature was deprecated after v3.18.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - layout\command_palette.dart:113:18 - 'RawKeyDownEvent' is deprecated and shouldn't be used. Use KeyDownEvent instead. This feature was deprecated after v3.18.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - layout\command_palette.dart:284:20 - 'RawKeyboardListener' is deprecated and shouldn't be used. Use KeyboardListener instead. This feature was deprecated after v3.18.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - models\tracked_app.dart:89:22 - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - providers\app_tracker_provider.dart:5:8 - The imported package 'uuid' isn't a dependency of the importing package. Try adding a dependency for 'uuid' in the 'pubspec.yaml' file. - depend_on_referenced_packages
+   info - providers\app_tracker_provider.dart:118:7 - Statements in an if should be enclosed in a block. Try wrapping the statement in a block. - curly_braces_in_flow_control_structures
+   info - providers\boxclock_provider.dart:45:20 - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - providers\calendar_provider.dart:130:7 - The member 'state' overrides an inherited member but isn't annotated with '@override'. Try adding the '@override' annotation. - annotate_overrides
+   info - services\app_tour_service.dart:105:28 - Don't use 'BuildContext's across async gaps. Try rewriting the code to not use the 'BuildContext', or guard the use with a 'mounted' check. - use_build_context_synchronously
+   info - services\calendar_service.dart:54:11 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - services\canvas_service.dart:18:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - services\update_service.dart:40:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - services\update_service.dart:44:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - services\update_service.dart:88:9 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - services\update_service.dart:115:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - services\voice_command_service.dart:133:9 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
+   info - services\voice_command_service.dart:390:34 - Unnecessary braces in a string interpolation. Try removing the braces. - unnecessary_brace_in_string_interps
+   info - services\voice_command_service.dart:390:42 - Unnecessary braces in a string interpolation. Try removing the braces. - unnecessary_brace_in_string_interps
+   info - services\voice_command_service.dart:406:34 - Unnecessary braces in a string interpolation. Try removing the braces. - unnecessary_brace_in_string_interps
+   info - services\voice_command_service.dart:406:42 - Unnecessary braces in a string interpolation. Try removing the braces. - unnecessary_brace_in_string_interps
+   info - test_process.dart:7:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_process.dart:12:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_process.dart:24:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_process.dart:35:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_process.dart:37:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_window.dart:8:3 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_window.dart:13:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_window.dart:19:7 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_window.dart:27:5 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_window.dart:28:5 - Don't invoke 'print' in production code. Try using a logging framework. - avoid_print
+   info - test_window.dart:28:11 - Use interpolation to compose strings and values. Try using string interpolation to build the composite string. - prefer_interpolation_to_compose_strings
+   info - theme\app_theme.dart:24:7 - 'dialogBackgroundColor' is deprecated and shouldn't be used. Use DialogThemeData.backgroundColor instead. This feature was deprecated after v3.27.0-0.1.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - theme\app_theme.dart:33:9 - 'background' is deprecated and shouldn't be used. Use surface instead. This feature was deprecated after v3.18.0-0.1.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - theme\app_theme.dart:34:9 - 'onBackground' is deprecated and shouldn't be used. Use onSurface instead. This feature was deprecated after v3.18.0-0.1.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+   info - theme\app_theme.dart:197:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - utils\snackbar_utils.dart:32:6 - Unnecessary empty statement. Try removing the empty statement or restructuring the code. - empty_statements
+   info - widgets\media_preview.dart:109:34 - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext. - use_build_context_synchronously
+   info - widgets\media_viewer.dart:5:8 - The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive. - unnecessary_import
+   info - widgets\media_viewer.dart:136:60 - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext. - use_build_context_synchronously
+   info - widgets\media_viewer.dart:140:60 - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext. - use_build_context_synchronously
+   info - widgets\universal_task_dialog.dart:222:31 - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement. - deprecated_member_use
+
+643 issues found.
