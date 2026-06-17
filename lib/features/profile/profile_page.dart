@@ -181,10 +181,11 @@ class ProfilePage extends ConsumerWidget {
                           ) : null,
                         ),
                         child: user.profilePic.isEmpty || user.profilePic.contains('randomuser.me')
-                            ? Center(
-                                child: Text(
-                                  user.name.split(' ').map((s) => s.isNotEmpty ? s[0] : '').join('').toUpperCase(),
-                                  style: const TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
+                            ? const Center(
+                                child: Icon(
+                                  LucideIcons.user,
+                                  color: Colors.white,
+                                  size: 48,
                                 ),
                               )
                             : null,
@@ -306,10 +307,11 @@ class ProfilePage extends ConsumerWidget {
                             ) : null,
                           ),
                           child: currentProfilePic == null || currentProfilePic!.isEmpty || currentProfilePic!.contains('randomuser.me')
-                              ? Center(
-                                  child: Text(
-                                    nameController.text.split(' ').map((s) => s.isNotEmpty ? s[0] : '').join('').toUpperCase(),
-                                    style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
+                              ? const Center(
+                                  child: Icon(
+                                    LucideIcons.user,
+                                    color: Colors.white,
+                                    size: 32,
                                   ),
                                 )
                               : null,

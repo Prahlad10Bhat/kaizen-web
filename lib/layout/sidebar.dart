@@ -649,9 +649,10 @@ class _UserProfileWidgetState extends ConsumerState<_UserProfileWidget> {
                                 ? _getImageProvider(widget.user.profilePic) 
                                 : null,
                             child: widget.user.profilePic.isEmpty || widget.user.profilePic.contains('randomuser.me')
-                                ? Text(
-                                    widget.user.name.split(' ').map((s) => (s as String).isNotEmpty ? s[0] : '').join('').toUpperCase(),
-                                    style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold),
+                                ? const Icon(
+                                    LucideIcons.user,
+                                    color: Colors.white,
+                                    size: 14,
                                   )
                                 : null,
                           ),

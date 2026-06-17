@@ -160,8 +160,6 @@ class _AppTrackerPageState extends ConsumerState<AppTrackerPage> {
                     ],
                   ),
                 ),
-                const Spacer(),
-                Icon(LucideIcons.activity, color: theme.primaryColor, size: 28),
               ],
             ),
             const Gap(32),
