@@ -5,7 +5,7 @@ import Hero from "@/components/hero";
 import ProductOverview from "@/components/product-overview";
 import InteractiveShowcase from "@/components/interactive-showcase";
 import ThemeShowcase from "@/components/theme-showcase";
-import AIShowcase from "@/components/ai-showcase";
+import PrivacyShowcase from "@/components/privacy-showcase";
 import Philosophy from "@/components/philosophy";
 import Footer from "@/components/footer";
 import { Download } from "lucide-react";
@@ -27,7 +27,7 @@ export default function Home() {
         <ProductOverview />
         <InteractiveShowcase />
         <ThemeShowcase />
-        <AIShowcase />
+        <PrivacyShowcase />
         <Philosophy />
         
         {/* Final CTA Section */}
@@ -48,13 +48,6 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="relative z-10 flex items-center gap-4 text-xs font-medium text-zinc-500 border border-white/10 rounded-full px-6 py-2 bg-white/5">
-            <span>v1.0.0</span>
-            <div className="w-1 h-1 rounded-full bg-zinc-700"></div>
-            <span>100% Free</span>
-            <div className="w-1 h-1 rounded-full bg-zinc-700"></div>
-            <span>Open Source</span>
-          </div>
         </section>
 
         <Footer />

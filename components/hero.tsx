@@ -1,11 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Download, Play, Shield, WifiOff, Globe as GitHubIcon, Sparkles } from "lucide-react";
+import { Download, Play, Shield, WifiOff, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { useLatestRelease } from "@/hooks/use-latest-release";
+import { FaWindows, FaAndroid, FaApple } from "react-icons/fa";
+import { DownloadModal } from "./download-modal";
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { downloadUrl } = useLatestRelease();
   return (
     <section className="relative min-h-[90vh] pt-32 pb-20 overflow-hidden flex items-center">
@@ -38,26 +42,24 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mb-16 w-full sm:w-auto">
-            <a
-              href={downloadUrl}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)]"
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(99,102,241,0.3)] cursor-pointer"
             >
               <Download className="w-4 h-4" />
-              Download for Windows
-            </a>
-            <button className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-transparent text-white font-semibold text-sm border border-white/20 hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
-              <Play className="w-4 h-4" />
-              Watch Demo
+              <span className="flex items-center">
+                Download for
+                <span className="flex items-center gap-1.5 ml-3 text-lg">
+                  <FaWindows title="Windows" />
+                  <FaAndroid title="Android (Coming Soon)" className="opacity-40" />
+                  <FaApple title="Mac/iOS (Coming Soon)" className="opacity-40" />
+                </span>
+              </span>
             </button>
           </div>
 
           {/* Trust Indicators */}
           <div className="flex flex-wrap items-center gap-6 text-xs text-zinc-500 font-medium">
-            <div className="flex items-center gap-2">
-              <GitHubIcon className="w-4 h-4" />
-              Free & Open Source
-            </div>
-            <div className="w-1 h-1 rounded-full bg-zinc-700"></div>
             <div className="flex items-center gap-2">
               <WifiOff className="w-4 h-4" />
               Works Offline
@@ -117,6 +119,7 @@ export default function Hero() {
         </motion.div>
 
       </div>
+      <DownloadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react";
 
 export function useLatestRelease() {
-  const [downloadUrl, setDownloadUrl] = useState("https://github.com/Prahlad10Bhat/APPUPDATE/releases/latest");
+  const [downloadUrl, setDownloadUrl] = useState("https://github.com/Prahlad10Bhat/Kaizen/releases/latest");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://api.github.com/repos/Prahlad10Bhat/APPUPDATE/releases/latest")
+    fetch("https://api.github.com/repos/Prahlad10Bhat/Kaizen/releases/latest")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch latest release");
         return res.json();

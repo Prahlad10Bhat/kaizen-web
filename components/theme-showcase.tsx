@@ -21,7 +21,7 @@ export default function ThemeShowcase() {
   const isDark = activeTheme.mode === "dark";
 
   return (
-    <section className="py-32 relative overflow-hidden bg-[#050505]">
+    <section id="themes" className="py-32 relative overflow-hidden bg-[#050505]">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_800px_800px_at_50%_0%,rgba(255,255,255,0.03),transparent)] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -55,7 +55,7 @@ export default function ThemeShowcase() {
                 <button
                   key={theme.id}
                   onClick={() => setActiveThemeId(theme.id)}
-                  className={`relative px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 flex items-center gap-2 ${
+                  className={`relative px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 flex items-center gap-2 cursor-pointer ${
                     isActive ? "text-white" : "text-zinc-400 hover:text-white"
                   }`}
                 >
@@ -159,7 +159,7 @@ export default function ThemeShowcase() {
                   <div className="flex items-center gap-4">
                     <span className="text-xs font-medium opacity-50" style={{ color: isDark ? 'white' : 'black' }}>v1.0.12</span>
                     <button 
-                      className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium border transition-colors duration-300 ${
+                      className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium border transition-colors duration-300 cursor-pointer ${
                         isDark ? "bg-white/5 border-white/10 text-white hover:bg-white/10" : "bg-black/5 border-black/10 text-black hover:bg-black/10"
                       }`}
                     >
@@ -174,7 +174,7 @@ export default function ThemeShowcase() {
                   <section>
                     <h4 className="text-xs font-bold tracking-widest mb-3 opacity-40 uppercase" style={{ color: isDark ? 'white' : 'black' }}>Theme</h4>
                     <div 
-                      className="rounded-xl overflow-hidden border flex flex-col transition-colors duration-300"
+                      className="rounded-xl overflow-hidden border flex flex-col transition-colors duration-300 cursor-pointer"
                       style={{ 
                         backgroundColor: isDark ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.5)',
                         borderColor: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' 
@@ -199,7 +199,7 @@ export default function ThemeShowcase() {
                   <section>
                     <h4 className="text-xs font-bold tracking-widest mb-3 opacity-40 uppercase" style={{ color: isDark ? 'white' : 'black' }}>Notifications</h4>
                     <div 
-                      className="rounded-xl overflow-hidden border flex flex-col transition-colors duration-300"
+                      className="rounded-xl overflow-hidden border flex flex-col transition-colors duration-300 cursor-pointer"
                       style={{ 
                         backgroundColor: isDark ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.5)',
                         borderColor: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' 
@@ -250,7 +250,7 @@ export default function ThemeShowcase() {
                   <section>
                     <h4 className="text-xs font-bold tracking-widest mb-3 opacity-40 uppercase" style={{ color: isDark ? 'white' : 'black' }}>Support & Community</h4>
                     <div 
-                      className="rounded-xl overflow-hidden border flex flex-col transition-colors duration-300"
+                      className="rounded-xl overflow-hidden border flex flex-col transition-colors duration-300 cursor-pointer"
                       style={{ 
                         backgroundColor: isDark ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.5)',
                         borderColor: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' 
@@ -287,7 +287,7 @@ export default function ThemeShowcase() {
               </div>
 
               {/* Floating Timer */}
-              <div className="absolute bottom-6 right-6 flex items-center gap-3 px-4 py-2 rounded-full border shadow-lg z-20 backdrop-blur-md"
+              <div className="absolute bottom-6 right-6 flex items-center gap-3 px-4 py-2 rounded-full border shadow-lg z-20 backdrop-blur-md cursor-pointer"
                 style={{ 
                   backgroundColor: isDark ? 'rgba(0,0,0,0.8)' : 'rgba(255,255,255,0.8)',
                   borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'

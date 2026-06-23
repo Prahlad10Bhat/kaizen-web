@@ -49,7 +49,7 @@ export default function InteractiveShowcase() {
   const activeIndex = features.findIndex((f) => f.id === activeFeature);
 
   return (
-    <section className="py-32 relative bg-kaizen-bg">
+    <section id="features" className="py-32 relative bg-kaizen-bg">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
@@ -76,7 +76,7 @@ export default function InteractiveShowcase() {
                 <button
                   key={feature.id}
                   onClick={() => setActiveFeature(feature.id)}
-                  className={`text-left p-6 rounded-2xl transition-all duration-300 relative border w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.33%-11px)] xl:w-[calc(50%-8px)] flex-grow ${
+                  className={`text-left p-6 rounded-2xl transition-all duration-300 relative border w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.33%-11px)] xl:w-[calc(50%-8px)] flex-grow cursor-pointer ${
                     isActive
                       ? "bg-gradient-to-br from-kaizen-surface to-kaizen-purple/20 border-kaizen-purple/30 shadow-[0_0_30px_rgba(99,102,241,0.15)]"
                       : "bg-kaizen-surface/50 border-white/5 hover:bg-kaizen-surface hover:border-white/10"
@@ -124,7 +124,7 @@ export default function InteractiveShowcase() {
                         { src: "/images/workouts.jpeg", title: "Workouts" },
                         { src: "/images/screentime.jpeg", title: "App Tracker" },
                       ].map((item, index) => (
-                        <div key={index} className="relative w-full h-full rounded-lg overflow-hidden border border-white/5 group bg-zinc-900/50 shadow-inner">
+                        <div key={index} className="relative w-full h-full rounded-lg overflow-hidden border border-white/5 group bg-zinc-900/50 shadow-inner cursor-pointer">
                           <Image
                             src={item.src}
                             alt={item.title}
