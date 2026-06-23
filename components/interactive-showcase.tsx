@@ -49,7 +49,7 @@ export default function InteractiveShowcase() {
   const activeIndex = features.findIndex((f) => f.id === activeFeature);
 
   return (
-    <section id="features" className="py-32 relative bg-kaizen-bg">
+    <section id="features" className="py-16 md:py-32 relative bg-kaizen-bg">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}

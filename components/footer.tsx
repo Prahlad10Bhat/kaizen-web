@@ -9,7 +9,7 @@ export default function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { downloadUrl } = useLatestRelease();
   return (
-    <footer className="bg-[#050505] pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
+    <footer className="bg-[#050505] pt-16 md:pt-24 pb-8 md:pb-12 border-t border-white/5 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-kaizen-purple/50 to-transparent opacity-50"></div>
       
       <div className="max-w-7xl mx-auto px-6">

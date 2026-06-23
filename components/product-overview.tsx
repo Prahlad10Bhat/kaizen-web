@@ -61,7 +61,7 @@ export default function ProductOverview() {
   ];
 
   return (
-    <section id="why-kaizen" className="py-24 relative overflow-hidden bg-kaizen-bg">
+    <section id="why-kaizen" className="py-16 md:py-24 relative overflow-hidden bg-kaizen-bg">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Column */}

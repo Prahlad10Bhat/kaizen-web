@@ -44,12 +44,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4 mb-16 w-full sm:w-auto">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(99,102,241,0.3)] cursor-pointer"
+              className="w-full sm:w-auto px-6 py-3 sm:py-3.5 rounded-xl bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-2 sm:gap-3 shadow-[0_0_20px_rgba(99,102,241,0.3)] cursor-pointer"
             >
               <Download className="w-4 h-4" />
               <span className="flex items-center">
-                Download for
-                <span className="flex items-center gap-1.5 ml-3 text-lg">
+                <span className="hidden sm:inline">Download for</span>
+                <span className="sm:hidden">Download</span>
+                <span className="hidden sm:flex items-center gap-1.5 ml-3 text-lg">
                   <FaWindows title="Windows" />
                   <FaAndroid title="Android (Coming Soon)" className="opacity-40" />
                   <FaApple title="Mac/iOS (Coming Soon)" className="opacity-40" />

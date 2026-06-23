@@ -1,14 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Download, ChevronRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { Download, Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { DownloadModal } from "./download-modal";
 import { FaWindows, FaAndroid, FaApple } from "react-icons/fa";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,20 +56,60 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="px-5 py-2.5 rounded-full bg-kaizen-purple text-white text-sm font-medium hover:bg-kaizen-purple-light transition-colors flex items-center gap-3 shadow-[0_0_20px_rgba(99,102,241,0.3)] cursor-pointer"
+            className="px-5 py-2 sm:py-2.5 rounded-full bg-kaizen-purple text-white text-sm font-medium hover:bg-kaizen-purple-light transition-colors flex items-center gap-2 sm:gap-3 shadow-[0_0_20px_rgba(99,102,241,0.3)] cursor-pointer"
           >
             <span className="flex items-center">
-              Download for
-              <span className="flex items-center gap-1.5 ml-3 text-lg">
+              <span className="hidden sm:inline">Download for</span>
+              <span className="sm:hidden">Download</span>
+              <span className="hidden sm:flex items-center gap-1.5 ml-3 text-lg">
                 <FaWindows title="Windows" />
                 <FaAndroid title="Android (Coming Soon)" className="opacity-40" />
                 <FaApple title="Mac/iOS (Coming Soon)" className="opacity-40" />
               </span>
             </span>
-            <Download className="w-4 h-4 ml-1" />
+            <Download className="w-4 h-4 sm:ml-1" />
+          </button>
+
+          {/* Mobile Menu Toggle */}
+          <button 
+            className="md:hidden p-2 -mr-2 text-zinc-400 hover:text-white"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-[#0a0a0c]/95 backdrop-blur-xl border-b border-white/5 overflow-hidden shadow-2xl"
+          >
+            <div className="px-6 py-6 flex flex-col gap-6">
+              {[
+                { name: "Why Kaizen", href: "/#why-kaizen" },
+                { name: "Features", href: "/#features" },
+                { name: "Themes", href: "/#themes" },
+                { name: "Privacy", href: "/#privacy" }
+              ].map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-lg font-medium text-zinc-300 hover:text-white transition-colors"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <DownloadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
