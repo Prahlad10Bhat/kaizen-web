@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Download, Play, Shield, WifiOff, Sparkles } from "lucide-react";
 import Image from "next/image";
@@ -11,6 +11,36 @@ import { DownloadModal } from "./download-modal";
 export default function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { downloadUrl } = useLatestRelease();
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % 3);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const slideVariants = {
+    front: { 
+      opacity: 1, x: -80, y: 100, rotateY: -2, rotateX: 0, scale: 1.0, zIndex: 30,
+      filter: "brightness(1)"
+    },
+    middle: { 
+      opacity: 0.7, x: 0, y: 20, rotateY: -8, rotateX: 3, scale: 0.9, zIndex: 20,
+      filter: "brightness(0.7)"
+    },
+    back: { 
+      opacity: 0.4, x: 80, y: -60, rotateY: -12, rotateX: 5, scale: 0.8, zIndex: 10,
+      filter: "brightness(0.4)"
+    }
+  };
+
+  const images = [
+    { src: "/images/dashboard.jpeg", alt: "Dashboard" },
+    { src: "/images/notes.jpeg", alt: "Notes" },
+    { src: "/images/tasks.jpeg", alt: "Tasks" }
+  ];
+
   return (
     <section className="relative min-h-[90vh] pt-32 pb-20 overflow-hidden flex items-center">
       {/* Background glow */}
@@ -74,50 +104,30 @@ export default function Hero() {
         </motion.div>
 
         {/* Right Column: 3D Image Collage */}
-        <motion.div 
-          initial="rest"
-          whileHover="hover"
-          animate="rest"
+        <div 
           className="relative h-[500px] md:h-[600px] lg:h-[650px] w-full perspective-1000 hidden lg:block cursor-pointer"
+          onClick={() => setActiveIndex((prev) => (prev + 1) % 3)}
         >
-          
-          {/* Back image (Tasks/Calendar) */}
-          <motion.div
-            variants={{
-              rest: { opacity: 0.4, x: 80, y: -40, rotateY: -12, rotateX: 5, scale: 0.8 },
-              hover: { opacity: 0.7, x: 160, y: -80, rotateY: -18, rotateX: 8, scale: 0.85 }
-            }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute top-10 right-0 w-[75%] max-w-[480px] rounded-xl border border-white/10 bg-black/40 shadow-2xl overflow-hidden ring-1 ring-white/5 z-10"
-          >
-            <Image src="/images/tasks.jpeg" alt="Tasks" width={800} height={500} className="w-full object-cover opacity-80" />
-          </motion.div>
+          {images.map((img, index) => {
+            let position = "back";
+            if (index === activeIndex) position = "front";
+            else if (index === (activeIndex + 1) % 3) position = "middle";
 
-          {/* Middle image (Notes) */}
-          <motion.div
-            variants={{
-              rest: { opacity: 0.7, x: 10, y: 30, rotateY: -8, rotateX: 3, scale: 0.9 },
-              hover: { opacity: 0.9, x: 50, y: 10, rotateY: -12, rotateX: 5, scale: 0.92 }
-            }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute top-24 right-[10%] w-[80%] max-w-[540px] rounded-xl border border-white/10 bg-black/60 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden ring-1 ring-white/10 z-20"
-          >
-            <Image src="/images/notes.jpeg" alt="Notes" width={800} height={500} className="w-full object-cover" />
-          </motion.div>
-
-          {/* Front image (Dashboard) */}
-          <motion.div
-            variants={{
-              rest: { opacity: 1, x: -60, y: 110, rotateY: -2, rotateX: 0, scale: 1.0 },
-              hover: { opacity: 1, x: -100, y: 130, rotateY: 5, rotateX: 2, scale: 1.03 }
-            }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute top-10 left-0 w-[85%] max-w-[600px] rounded-2xl border border-white/10 bg-kaizen-surface/90 backdrop-blur-md shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden ring-1 ring-white/20 z-30"
-          >
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-            <Image src="/images/dashboard.jpeg" alt="Dashboard" width={1000} height={600} className="w-full object-cover" priority />
-          </motion.div>
-        </motion.div>
+            return (
+              <motion.div
+                key={img.src}
+                initial={false}
+                animate={position}
+                variants={slideVariants}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                className="absolute top-10 left-[10%] w-[80%] max-w-[600px] rounded-2xl border border-white/10 bg-kaizen-surface/90 backdrop-blur-md shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden ring-1 ring-white/20"
+              >
+                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent z-10"></div>
+                <Image src={img.src} alt={img.alt} width={1000} height={600} className="w-full object-cover" priority={index === 0} />
+              </motion.div>
+            );
+          })}
+        </div>
 
       </div>
       <DownloadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
