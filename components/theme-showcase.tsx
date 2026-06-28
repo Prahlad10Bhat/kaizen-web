@@ -46,7 +46,7 @@ export default function ThemeShowcase() {
 
         <div className="flex flex-col items-center gap-8 md:gap-12">
           {/* Theme Selector */}
-          <div className="w-full grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-4 p-2 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md shadow-2xl">
+          <div className="w-full sm:w-fit grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-4 p-2 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md shadow-2xl">
             {themes.map((theme) => {
               const Icon = theme.icon;
               const isActive = activeThemeId === theme.id;
