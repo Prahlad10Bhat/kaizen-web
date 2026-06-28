@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Philosophy() {
   return (
-    <section className="py-40 relative overflow-hidden bg-kaizen-bg flex items-center justify-center">
+    <section className="py-16 md:py-24 relative overflow-hidden bg-kaizen-bg flex items-center justify-center">
       {/* Subtle grid and vignette */}
       <div className="absolute inset-0 bg-grid-white opacity-10 pointer-events-none"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,var(--color-kaizen-bg)_70%)] pointer-events-none"></div>
