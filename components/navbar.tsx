@@ -89,7 +89,7 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-[#0a0a0c]/95 backdrop-blur-xl border-b border-white/5 overflow-hidden shadow-2xl"
           >
-            <div className="px-6 py-6 flex flex-col gap-6">
+            <div className="px-6 py-6 flex flex-col gap-6 items-end">
               {[
                 { name: "Why Kaizen", href: "/#why-kaizen" },
                 { name: "Features", href: "/#features" },
@@ -100,7 +100,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium text-zinc-300 hover:text-white transition-colors"
+                  className="text-lg font-medium text-zinc-300 hover:text-white transition-colors text-right"
                 >
                   {item.name}
                 </a>
