@@ -13,8 +13,8 @@ export default function Footer() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-kaizen-purple/50 to-transparent opacity-50"></div>
       
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-y-12 sm:gap-x-8 lg:gap-8 mb-16">
+          <div className="col-span-1 sm:col-span-2">
             <a href="/" className="flex items-center gap-3 mb-6 hover:opacity-90 transition-opacity">
               <img src="/images/logo.png" alt="Kaizen Logo" className="w-12 h-12 object-contain" />
               <span className="font-bold text-2xl tracking-tight text-white">Kaizen</span>

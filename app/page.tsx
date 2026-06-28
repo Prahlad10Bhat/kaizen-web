@@ -11,8 +11,18 @@ import Footer from "@/components/footer";
 import { Download } from "lucide-react";
 import { useLatestRelease } from "@/hooks/use-latest-release";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   const { downloadUrl } = useLatestRelease();
+
+  const fadeUpProps = {
+    initial: { opacity: 0, y: 40 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true, margin: "-100px" },
+    transition: { duration: 0.8, ease: "easeOut" }
+  };
+
   return (
     <main className="bg-kaizen-bg text-white min-h-screen relative">
       {/* Background Grid Pattern */}
@@ -24,14 +34,31 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        <ProductOverview />
-        <InteractiveShowcase />
+        
+        <motion.div {...fadeUpProps}>
+          <ProductOverview />
+        </motion.div>
+        
+        <motion.div {...fadeUpProps}>
+          <InteractiveShowcase />
+        </motion.div>
+        
+        {/* Kept static as requested */}
         <ThemeShowcase />
-        <PrivacyShowcase />
-        <Philosophy />
+        
+        <motion.div {...fadeUpProps}>
+          <PrivacyShowcase />
+        </motion.div>
+        
+        <motion.div {...fadeUpProps}>
+          <Philosophy />
+        </motion.div>
         
         {/* Final CTA Section */}
-        <section className="py-32 relative overflow-hidden bg-[#050505] flex flex-col items-center">
+        <motion.section 
+          {...fadeUpProps}
+          className="py-32 relative overflow-hidden bg-[#050505] flex flex-col items-center"
+        >
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-kaizen-purple/10 blur-[150px] rounded-full pointer-events-none" />
           
           <div className="relative z-10 flex flex-col sm:flex-row items-center gap-6 mb-12">
@@ -48,7 +75,7 @@ export default function Home() {
             </a>
           </div>
 
-        </section>
+        </motion.section>
 
         <Footer />
       </div>

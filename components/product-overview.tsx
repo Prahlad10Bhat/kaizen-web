@@ -11,10 +11,9 @@ import {
   Target, 
   Scale, 
   Box, 
-  Zap, 
-  Sparkles 
+  Zap
 } from "lucide-react";
-import { FaApple, FaWindows, FaLinux } from "react-icons/fa";
+import { FaWindows } from "react-icons/fa";
 
 export default function ProductOverview() {
   const features = [
@@ -62,8 +61,8 @@ export default function ProductOverview() {
 
   return (
     <section id="why-kaizen" className="py-16 md:py-24 relative overflow-hidden bg-kaizen-bg">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -72,27 +71,27 @@ export default function ProductOverview() {
             transition={{ duration: 0.8 }}
             className="flex flex-col"
           >
-            <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold tracking-tight mb-6 leading-[1.1]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold tracking-tight mb-6 leading-[1.1]">
               <span className="text-kaizen-purple-light">Being human</span> <br />
               <span className="text-white">is all about balance.</span> <br />
               <span className="text-white">Kaizen helps you</span> <br />
               <span className="text-kaizen-purple-light">find it.</span>
             </h2>
             
-            <p className="text-lg text-zinc-400 leading-relaxed mb-10 max-w-lg">
+            <p className="text-base sm:text-lg text-zinc-400 leading-relaxed mb-8 sm:mb-10 max-w-lg">
               Unify your work, health, and personal growth in one powerful system. Stay focused, build better habits, and make progress—<span className="text-kaizen-purple-light">without sacrificing what matters.</span>
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 mb-10 text-sm font-medium text-zinc-300">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-3 sm:gap-4 mb-8 sm:mb-10 text-sm font-medium text-zinc-300">
               {features.map((f) => (
-                <div key={f.name} className="flex items-center gap-2">
+                <div key={f.name} className="flex items-center gap-2 rounded-xl border border-white/5 bg-white/[0.03] px-3 py-2 sm:border-0 sm:bg-transparent sm:p-0">
                   {f.icon}
                   <span>{f.name}</span>
                 </div>
               ))}
             </div>
 
-            <div className="flex items-center gap-3 text-lg font-medium text-zinc-400 mb-12">
+            <div className="flex items-start sm:items-center gap-3 text-base sm:text-lg font-medium text-zinc-400 mb-10 sm:mb-12">
               <Scale className="w-5 h-5 text-kaizen-purple-light" />
               <span>
                 One system. Every part of you. <span className="text-kaizen-purple-light">In balance.</span>
@@ -115,18 +114,18 @@ export default function ProductOverview() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-4 sm:gap-6"
           >
             {cards.map((card, i) => (
-              <div key={i} className="p-8 rounded-2xl bg-[#0f0f13]/80 border border-white/5 flex flex-col sm:flex-row gap-6 items-start hover:border-kaizen-purple/30 transition-colors shadow-lg backdrop-blur-sm cursor-pointer">
-                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-kaizen-purple/10 border border-kaizen-purple/20 flex items-center justify-center text-kaizen-purple-light">
+              <div key={i} className="w-full p-5 sm:p-8 rounded-2xl bg-[#0f0f13]/80 border border-white/5 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start hover:border-kaizen-purple/30 transition-colors shadow-lg backdrop-blur-sm cursor-pointer">
+                <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-kaizen-purple/10 border border-kaizen-purple/20 flex items-center justify-center text-kaizen-purple-light">
                   {card.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white tracking-tight mb-3 leading-snug">
+                  <h3 className="text-base sm:text-xl font-bold text-white tracking-tight mb-2 sm:mb-3 leading-snug">
                     {card.title}
                   </h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
                     {card.description}
                   </p>
                 </div>

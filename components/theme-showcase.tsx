@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Palette, Check, Sun, Moon, Flower2, Coffee, Leaf, Feather, Layout, Cloud, User } from "lucide-react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Palette, Sun, Moon, Flower2, Coffee, Leaf, Feather, Layout, Cloud, User } from "lucide-react";
 
 const themes = [
   { id: "light", name: "Light", mode: "light", color: "#ffffff", surface: "#f3f4f6", accent: "#374151", icon: Sun },
@@ -21,11 +22,11 @@ export default function ThemeShowcase() {
   const isDark = activeTheme.mode === "dark";
 
   return (
-    <section id="themes" className="py-32 relative overflow-hidden bg-[#050505]">
+    <section id="themes" className="py-16 md:py-32 relative overflow-hidden bg-[#050505]">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_800px_800px_at_50%_0%,rgba(255,255,255,0.03),transparent)] pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -36,18 +37,18 @@ export default function ThemeShowcase() {
             Make it yours
           </motion.div>
           
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 sm:mb-6 text-white leading-tight">
             Beautiful themes for <br />
             every mood.
           </h2>
-          <p className="text-xl text-zinc-400">
+          <p className="text-base sm:text-xl text-zinc-400">
             Customize Kaizen to match your aesthetic. Instantly switch between carefully crafted color palettes that look great day or night.
           </p>
         </div>
 
-        <div className="flex flex-col items-center gap-12">
+        <div className="flex flex-col items-center gap-8 md:gap-12">
           {/* Theme Selector */}
-          <div className="flex flex-wrap justify-center gap-4 p-2 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md shadow-2xl">
+          <div className="w-full grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-4 p-2 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md shadow-2xl">
             {themes.map((theme) => {
               const Icon = theme.icon;
               const isActive = activeThemeId === theme.id;
@@ -55,7 +56,7 @@ export default function ThemeShowcase() {
                 <button
                   key={theme.id}
                   onClick={() => setActiveThemeId(theme.id)}
-                  className={`relative px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 flex items-center gap-2 cursor-pointer ${
+                  className={`relative px-3 sm:px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer min-w-0 ${
                     isActive ? "text-white" : "text-zinc-400 hover:text-white"
                   }`}
                 >
@@ -66,9 +67,9 @@ export default function ThemeShowcase() {
                       transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     />
                   )}
-                  <span className="relative z-10 flex items-center gap-2">
+                  <span className="relative z-10 flex items-center gap-2 min-w-0">
                     <Icon className="w-4 h-4" />
-                    {theme.name}
+                    <span className="truncate">{theme.name}</span>
                   </span>
                 </button>
               );
@@ -77,7 +78,7 @@ export default function ThemeShowcase() {
 
           {/* Theme Preview App UI */}
           <div 
-            className="relative w-full max-w-5xl aspect-[16/10] rounded-[2rem] border overflow-hidden flex transition-all duration-300 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.5)]"
+            className="relative w-full max-w-5xl aspect-[4/5] sm:aspect-[16/10] rounded-2xl sm:rounded-[2rem] border overflow-hidden flex transition-all duration-300 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.5)]"
             style={{ 
               borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
               backgroundColor: activeTheme.color 
@@ -104,12 +105,12 @@ export default function ThemeShowcase() {
             
             {/* Icon Sidebar */}
             <div 
-              className="w-16 md:w-20 border-r flex flex-col items-center py-6 gap-6 transition-colors duration-300 z-10"
+              className="w-14 md:w-20 border-r flex flex-col items-center py-5 md:py-6 gap-5 md:gap-6 transition-colors duration-300 z-10"
               style={{ borderColor: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)', backgroundColor: activeTheme.color }}
             >
               {/* Logo */}
               <div className="mb-4">
-                <img src="/images/logo.png" alt="Kaizen Logo" className="w-6 h-6 object-contain" />
+                <Image src="/images/logo.png" alt="Kaizen Logo" width={24} height={24} className="w-6 h-6 object-contain" />
               </div>
 
               {/* Top Icons */}
@@ -149,15 +150,15 @@ export default function ThemeShowcase() {
             </div>
 
             {/* Main Content Area */}
-            <div className="flex-1 overflow-hidden pb-24 relative transition-colors duration-300" style={{ backgroundColor: activeTheme.surface }}>
+            <div className="flex-1 overflow-hidden pb-16 md:pb-24 relative transition-colors duration-300" style={{ backgroundColor: activeTheme.surface }}>
               
-              <div className="max-w-4xl mx-auto px-8 md:px-12 py-10 pt-16">
+              <div className="max-w-4xl mx-auto px-4 sm:px-8 md:px-12 py-8 md:py-10 pt-14 md:pt-16">
                 {/* Header */}
-                <div className="flex items-center justify-between mb-12">
-                  <h3 className={`text-3xl md:text-4xl font-bold transition-colors duration-300 ${isDark ? "text-white" : "text-black"}`}>Settings</h3>
+                <div className="flex items-center justify-between gap-3 mb-8 md:mb-12">
+                  <h3 className={`text-2xl md:text-4xl font-bold transition-colors duration-300 ${isDark ? "text-white" : "text-black"}`}>Settings</h3>
                   
                   <div className="flex items-center gap-4">
-                    <span className="text-xs font-medium opacity-50" style={{ color: isDark ? 'white' : 'black' }}>v1.0.12</span>
+                    <span className="hidden sm:inline text-xs font-medium opacity-50" style={{ color: isDark ? 'white' : 'black' }}>v1.0.12</span>
                     <button 
                       className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium border transition-colors duration-300 cursor-pointer ${
                         isDark ? "bg-white/5 border-white/10 text-white hover:bg-white/10" : "bg-black/5 border-black/10 text-black hover:bg-black/10"
@@ -169,7 +170,7 @@ export default function ThemeShowcase() {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-6 md:gap-10">
                   {/* Theme Section */}
                   <section>
                     <h4 className="text-xs font-bold tracking-widest mb-3 opacity-40 uppercase" style={{ color: isDark ? 'white' : 'black' }}>Theme</h4>
@@ -261,7 +262,7 @@ export default function ThemeShowcase() {
                           <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${isDark ? 'bg-white/5' : 'bg-black/5'}`}>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={isDark ? "text-zinc-400" : "text-zinc-600"}><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
                           </div>
-                          <span className={`text-sm font-semibold ${isDark ? "text-zinc-200" : "text-zinc-800"}`}>What's New</span>
+                          <span className={`text-sm font-semibold ${isDark ? "text-zinc-200" : "text-zinc-800"}`}>What&apos;s New</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span className="text-sm font-medium" style={{ color: activeTheme.accent }}>Changelog</span>
@@ -287,7 +288,7 @@ export default function ThemeShowcase() {
               </div>
 
               {/* Floating Timer */}
-              <div className="absolute bottom-6 right-6 flex items-center gap-3 px-4 py-2 rounded-full border shadow-lg z-20 backdrop-blur-md cursor-pointer"
+              <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 flex items-center gap-3 px-3 md:px-4 py-2 rounded-full border shadow-lg z-20 backdrop-blur-md cursor-pointer"
                 style={{ 
                   backgroundColor: isDark ? 'rgba(0,0,0,0.8)' : 'rgba(255,255,255,0.8)',
                   borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'
