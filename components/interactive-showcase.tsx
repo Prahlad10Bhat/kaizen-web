@@ -21,18 +21,18 @@ const features = [
     image: "/images/tasks.jpeg",
   },
   {
-    id: "habits",
-    title: "Habit Tracker",
-    description: "Build better habits with beautiful streak tracking.",
-    icon: <Target className="w-5 h-5" />,
-    image: "/images/habit_tracker.jpeg",
-  },
-  {
     id: "calendar",
     title: "Calendar",
     description: "Plan your days and never miss what matters.",
     icon: <CalendarCheck className="w-5 h-5" />,
     image: "/images/calendar.jpeg",
+  },
+  {
+    id: "habits",
+    title: "Habit Tracker",
+    description: "Build better habits with beautiful streak tracking.",
+    icon: <Target className="w-5 h-5" />,
+    image: "/images/habit_tracker.jpeg",
   },
   {
     id: "more",
