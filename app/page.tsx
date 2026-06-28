@@ -68,10 +68,15 @@ export default function Home() {
             
             <a
               href={downloadUrl}
-              className="px-6 py-3 rounded-full bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)] shrink-0"
+              className="px-8 py-3.5 rounded-full bg-kaizen-purple text-white text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)] shrink-0"
             >
-              Get Kaizen for Windows
-              <Download className="w-4 h-4" />
+              <span className="font-light opacity-90">Download for</span>
+              <div className="flex items-center gap-1.5 font-semibold">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M0 3.449L9.75 2.1v9.131H0V3.449zm10.95-1.57L24 0v11.08H10.95V1.88zm0 10.375H24V24l-13.05-1.854V12.254zm-1.2 0H0v8.925l9.75-1.378V12.255z" />
+                </svg>
+                Windows
+              </div>
             </a>
           </div>
         </motion.section>
