@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   const { downloadUrl } = useLatestRelease();
 
-  const fadeUpProps = {
+  const fadeUpProps: any = {
     initial: { opacity: 0, y: 40 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: "-100px" },
