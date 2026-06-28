@@ -102,9 +102,13 @@ export default function Footer() {
       </div>
 
       {/* Massive Stretched Text */}
-      <div className="mt-8 sm:mt-12 w-full flex justify-center pointer-events-none select-none overflow-hidden -mb-4 sm:-mb-8">
-        <span className="text-[26vw] font-bold text-white/[0.02] leading-[0.75] tracking-tighter uppercase text-center w-full">
-          KAIZEN
+      <div className="mt-8 sm:mt-12 w-full flex justify-center select-none overflow-hidden -mb-4 sm:-mb-8 cursor-default group">
+        <span className="text-[26vw] font-bold text-white/[0.02] leading-[0.75] tracking-tighter uppercase text-center w-full transition-colors duration-500 group-hover:text-white/[0.04]">
+          <span className="relative inline-grid place-items-center">
+            <span className="col-start-1 row-start-1 transition-opacity duration-500 opacity-100 group-hover:opacity-0">KAI</span>
+            <span className="col-start-1 row-start-1 transition-opacity duration-500 opacity-0 group-hover:opacity-100 font-sans tracking-normal">カイ</span>
+          </span>
+          <span>ZEN</span>
         </span>
       </div>
       <DownloadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
