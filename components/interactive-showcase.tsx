@@ -7,18 +7,18 @@ import { LayoutList, BookOpen, CalendarCheck, Target, Box } from "lucide-react";
 
 const features = [
   {
-    id: "tasks",
-    title: "Tasks & Projects",
-    description: "Organize your work with powerful task management.",
-    icon: <LayoutList className="w-5 h-5" />,
-    image: "/images/tasks.jpeg",
-  },
-  {
     id: "notes",
     title: "Notes",
     description: "Capture ideas and organize your thoughts.",
     icon: <BookOpen className="w-5 h-5" />,
     image: "/images/notes.jpeg",
+  },
+  {
+    id: "tasks",
+    title: "Tasks & Projects",
+    description: "Organize your work with powerful task management.",
+    icon: <LayoutList className="w-5 h-5" />,
+    image: "/images/tasks.jpeg",
   },
   {
     id: "habits",
