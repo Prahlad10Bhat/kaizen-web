@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { LayoutList, BookOpen, CalendarCheck, Target, Box } from "lucide-react";
 
@@ -45,6 +45,19 @@ const features = [
 
 export default function InteractiveShowcase() {
   const [activeFeature, setActiveFeature] = useState(features[0].id);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    const interval = setInterval(() => {
+      setActiveFeature((current) => {
+        const currentIndex = features.findIndex((f) => f.id === current);
+        const nextIndex = (currentIndex + 1) % features.length;
+        return features[nextIndex].id;
+      });
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [isAutoPlaying]);
 
   const activeIndex = features.findIndex((f) => f.id === activeFeature);
 
@@ -68,14 +81,17 @@ export default function InteractiveShowcase() {
         {/* Content Layout */}
         <div className="flex flex-col-reverse xl:flex-row gap-8 relative items-center xl:items-start">
           
-          {/* Left Side: Feature Cards */}
-          <div className="w-full xl:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3 xl:grid-cols-2">
+          {/* Left Side: Feature Cards (Desktop Only) */}
+          <div className="hidden xl:grid w-full xl:w-1/2 grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3 xl:grid-cols-2">
             {features.map((feature) => {
               const isActive = activeFeature === feature.id;
               return (
                 <button
                   key={feature.id}
-                  onClick={() => setActiveFeature(feature.id)}
+                  onClick={() => {
+                    setActiveFeature(feature.id);
+                    setIsAutoPlaying(false);
+                  }}
                   className={`text-left p-4 sm:p-6 rounded-2xl transition-all duration-300 relative border min-h-[132px] sm:min-h-[168px] cursor-pointer ${
                     feature.id === "more" ? "sm:col-span-2 lg:col-span-3 xl:col-span-2" : ""
                   } ${
@@ -102,9 +118,10 @@ export default function InteractiveShowcase() {
             })}
           </div>
 
-          {/* Right Side: Image Preview */}
-          <div className="w-full xl:w-1/2 relative aspect-[4/3] sm:aspect-[16/9] rounded-2xl sm:rounded-[2rem] border border-white/10 bg-kaizen-surface/50 backdrop-blur-xl overflow-hidden shadow-2xl ring-1 ring-white/5 mt-4 xl:mt-0">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-kaizen-purple/10 blur-[100px] rounded-full pointer-events-none" />
+          {/* Right Side / Mobile Slider: Image Preview + Info */}
+          <div className="w-full xl:w-1/2 flex flex-col gap-6 xl:gap-0 mt-4 xl:mt-0">
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] rounded-2xl sm:rounded-[2rem] border border-white/10 bg-kaizen-surface/50 backdrop-blur-xl overflow-hidden shadow-2xl ring-1 ring-white/5">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-kaizen-purple/10 blur-[100px] rounded-full pointer-events-none" />
             
             <AnimatePresence mode="wait">
               <motion.div
@@ -152,6 +169,45 @@ export default function InteractiveShowcase() {
               </motion.div>
             </AnimatePresence>
           </div>
+
+          {/* Mobile Info (Hidden on Desktop) */}
+          <div className="xl:hidden flex flex-col items-center text-center px-4 mt-2">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeFeature}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className="flex flex-col items-center"
+              >
+                <div className="w-12 h-12 rounded-xl bg-kaizen-purple/20 border border-kaizen-purple/30 text-kaizen-purple-light shadow-lg flex items-center justify-center mb-4">
+                  {features[activeIndex].icon}
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 tracking-tight">
+                  {features[activeIndex].title}
+                </h3>
+                <p className="text-sm sm:text-base text-zinc-400 max-w-sm">
+                  {features[activeIndex].description}
+                </p>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Slider Dots */}
+            <div className="flex gap-2 mt-8">
+              {features.map((f, idx) => (
+                <button 
+                  key={f.id}
+                  onClick={() => {
+                    setActiveFeature(f.id);
+                    setIsAutoPlaying(false);
+                  }}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${activeIndex === idx ? "w-6 bg-kaizen-purple-light" : "bg-white/20 hover:bg-white/40"}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </section>
