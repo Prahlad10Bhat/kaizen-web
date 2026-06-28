@@ -22,16 +22,16 @@ export default function Hero() {
 
   const slideVariants = {
     front: { 
-      opacity: 1, x: -80, y: 100, rotateY: -2, rotateX: 0, scale: 1.0, zIndex: 30,
+      opacity: 1, x: 0, y: 0, rotateY: 0, rotateX: 0, scale: 1.0, zIndex: 30,
       filter: "brightness(1)"
     },
-    middle: { 
-      opacity: 0.7, x: 0, y: 20, rotateY: -8, rotateX: 3, scale: 0.9, zIndex: 20,
-      filter: "brightness(0.7)"
+    right: { 
+      opacity: 0.6, x: 160, y: 0, rotateY: -12, rotateX: 0, scale: 0.85, zIndex: 20,
+      filter: "brightness(0.5)"
     },
-    back: { 
-      opacity: 0.4, x: 80, y: -60, rotateY: -12, rotateX: 5, scale: 0.8, zIndex: 10,
-      filter: "brightness(0.4)"
+    left: { 
+      opacity: 0.6, x: -160, y: 0, rotateY: 12, rotateX: 0, scale: 0.85, zIndex: 20,
+      filter: "brightness(0.5)"
     }
   };
 
@@ -105,13 +105,13 @@ export default function Hero() {
 
         {/* Right Column: 3D Image Collage */}
         <div 
-          className="relative h-[500px] md:h-[600px] lg:h-[650px] w-full perspective-1000 hidden lg:block cursor-pointer"
+          className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full perspective-1000 hidden lg:flex items-center justify-center cursor-pointer"
           onClick={() => setActiveIndex((prev) => (prev + 1) % 3)}
         >
           {images.map((img, index) => {
-            let position = "back";
+            let position = "left";
             if (index === activeIndex) position = "front";
-            else if (index === (activeIndex + 1) % 3) position = "middle";
+            else if (index === (activeIndex + 1) % 3) position = "right";
 
             return (
               <motion.div
@@ -120,7 +120,7 @@ export default function Hero() {
                 animate={position}
                 variants={slideVariants}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute top-10 left-[10%] w-[80%] max-w-[600px] rounded-2xl border border-white/10 bg-kaizen-surface/90 backdrop-blur-md shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden ring-1 ring-white/20"
+                className="absolute w-[90%] max-w-[650px] rounded-2xl border border-white/10 bg-kaizen-surface/90 backdrop-blur-md shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden ring-1 ring-white/20"
               >
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent z-10"></div>
                 <Image src={img.src} alt={img.alt} width={1000} height={600} className="w-full object-cover" priority={index === 0} />
