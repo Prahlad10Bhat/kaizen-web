@@ -12,8 +12,6 @@ const themes = [
   { id: "coffee", name: "Coffee", mode: "dark", color: "#271c19", surface: "#3a2a26", accent: "#b48c68", icon: Coffee },
   { id: "ember", name: "Ember", mode: "dark", color: "#2d1a1a", surface: "#3f2424", accent: "#f97316", icon: Leaf },
   { id: "ivory", name: "Ivory", mode: "light", color: "#fdfbf7", surface: "#f3f0e6", accent: "#374151", icon: Feather },
-  { id: "ash", name: "Ash", mode: "light", color: "#e5e7eb", surface: "#f3f4f6", accent: "#374151", icon: Layout },
-  { id: "plush", name: "Plush", mode: "light", color: "#f5f0e6", surface: "#ffffff", accent: "#31416d", icon: Cloud },
 ];
 
 export default function ThemeShowcase() {
@@ -78,7 +76,7 @@ export default function ThemeShowcase() {
 
           {/* Theme Preview App UI */}
           <div 
-            className="relative w-full max-w-5xl aspect-[4/5] sm:aspect-[16/10] rounded-2xl sm:rounded-[2rem] border overflow-hidden flex transition-all duration-300 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.5)]"
+            className="relative w-full max-w-5xl aspect-[3/5] sm:aspect-[16/10] rounded-2xl sm:rounded-[2rem] border overflow-hidden flex transition-all duration-300 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.5)]"
             style={{ 
               borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
               backgroundColor: activeTheme.color 
