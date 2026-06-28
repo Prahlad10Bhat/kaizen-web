@@ -114,10 +114,10 @@ export default function ProductOverview() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col gap-4 sm:gap-6"
+            className="flex flex-row sm:flex-col gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
             {cards.map((card, i) => (
-              <div key={i} className="w-full p-5 sm:p-8 rounded-2xl bg-[#0f0f13]/80 border border-white/5 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start hover:border-kaizen-purple/30 transition-colors shadow-lg backdrop-blur-sm cursor-pointer">
+              <div key={i} className="w-[85vw] sm:w-full flex-shrink-0 snap-center sm:snap-align-none p-5 sm:p-8 rounded-2xl bg-[#0f0f13]/80 border border-white/5 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start hover:border-kaizen-purple/30 transition-colors shadow-lg backdrop-blur-sm cursor-pointer">
                 <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-kaizen-purple/10 border border-kaizen-purple/20 flex items-center justify-center text-kaizen-purple-light">
                   {card.icon}
                 </div>
