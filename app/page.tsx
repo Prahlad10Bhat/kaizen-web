@@ -57,24 +57,23 @@ export default function Home() {
         {/* Final CTA Section */}
         <motion.section 
           {...fadeUpProps}
-          className="py-32 relative overflow-hidden bg-[#050505] flex flex-col items-center"
+          className="py-16 md:py-24 relative overflow-hidden bg-[#050505] flex flex-col items-center px-4 text-center sm:text-left"
         >
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-kaizen-purple/10 blur-[150px] rounded-full pointer-events-none" />
           
-          <div className="relative z-10 flex flex-col sm:flex-row items-center gap-6 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
+          <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-white text-center sm:text-left">
               Ready to upgrade your productivity?
             </h2>
             
             <a
               href={downloadUrl}
-              className="px-6 py-3 rounded-full bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)]"
+              className="px-6 py-3 rounded-full bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)] shrink-0"
             >
               Get Kaizen for Windows
               <Download className="w-4 h-4" />
             </a>
           </div>
-
         </motion.section>
 
         <Footer />
