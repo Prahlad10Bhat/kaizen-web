@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Download, Play, Shield, WifiOff, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
+import { Download, Play, Shield, WifiOff, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { useLatestRelease } from "@/hooks/use-latest-release";
 import { FaWindows, FaAndroid, FaApple } from "react-icons/fa";
@@ -105,23 +105,9 @@ export default function Hero() {
 
         {/* Right Column: 3D Image Collage */}
         <div 
-          className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full perspective-1000 hidden lg:flex items-center justify-center group"
+          className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full perspective-1000 hidden lg:flex items-center justify-center cursor-pointer"
+          onClick={() => setActiveIndex((prev) => (prev + 1) % 3)}
         >
-          {/* Navigation Arrows */}
-          <button 
-            onClick={() => setActiveIndex((prev) => (prev - 1 + 3) % 3)}
-            className="absolute left-0 z-40 p-3 rounded-full bg-black/50 text-white hover:bg-kaizen-purple transition-all border border-white/10 backdrop-blur-md opacity-0 group-hover:opacity-100 hover:scale-110 cursor-pointer shadow-lg"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          
-          <button 
-            onClick={() => setActiveIndex((prev) => (prev + 1) % 3)}
-            className="absolute right-0 z-40 p-3 rounded-full bg-black/50 text-white hover:bg-kaizen-purple transition-all border border-white/10 backdrop-blur-md opacity-0 group-hover:opacity-100 hover:scale-110 cursor-pointer shadow-lg"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-
           {images.map((img, index) => {
             let position = "left";
             if (index === activeIndex) position = "front";
