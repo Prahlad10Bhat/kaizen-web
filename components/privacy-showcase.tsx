@@ -102,7 +102,7 @@ export default function PrivacyShowcase() {
             className="flex items-center gap-2 text-sm text-zinc-500 font-medium"
           >
             <Lock className="w-4 h-4" />
-            No accounts. No data collection. Just you and your work.
+            No data collection. Just you and your work.
           </motion.div>
         </div>
         
