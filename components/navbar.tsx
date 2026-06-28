@@ -89,7 +89,7 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-[#0a0a0c]/95 backdrop-blur-xl border-b border-white/5 overflow-hidden shadow-2xl"
           >
-            <div className="px-6 py-6 flex flex-col gap-6 items-end">
+            <div className="px-6 py-6 flex flex-col gap-6 items-start">
               {[
                 { name: "Why Kaizen", href: "/#why-kaizen" },
                 { name: "Features", href: "/#features" },
@@ -100,11 +100,21 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium text-zinc-300 hover:text-white transition-colors text-right"
+                  className="text-lg font-medium text-zinc-300 hover:text-white transition-colors text-left"
                 >
                   {item.name}
                 </a>
               ))}
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  setIsModalOpen(true);
+                }}
+                className="w-full mt-2 px-6 py-3 rounded-xl bg-kaizen-purple text-white font-semibold text-sm hover:bg-kaizen-purple-light transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(99,102,241,0.3)] cursor-pointer"
+              >
+                Download for Windows
+                <Download className="w-4 h-4" />
+              </button>
             </div>
           </motion.div>
         )}
