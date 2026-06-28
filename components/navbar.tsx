@@ -56,7 +56,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="px-5 py-2 sm:py-2.5 rounded-full bg-kaizen-purple text-white text-sm font-medium hover:bg-kaizen-purple-light transition-colors flex items-center gap-2 sm:gap-3 shadow-[0_0_20px_rgba(99,102,241,0.3)] cursor-pointer"
+            className="hidden sm:flex px-5 py-2 sm:py-2.5 rounded-full bg-kaizen-purple text-white text-sm font-medium hover:bg-kaizen-purple-light transition-colors items-center gap-2 sm:gap-3 shadow-[0_0_20px_rgba(99,102,241,0.3)] cursor-pointer"
           >
             <span className="flex items-center">
               <span className="hidden sm:inline">Download for</span>
