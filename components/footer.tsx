@@ -103,7 +103,7 @@ export default function Footer() {
 
       {/* Massive Stretched Text */}
       <div className="mt-8 sm:mt-12 w-full flex justify-center select-none overflow-hidden -mb-4 sm:-mb-8">
-        <div className="text-[26vw] font-bold text-white/[0.02] leading-[0.75] tracking-tighter uppercase flex justify-center w-full whitespace-nowrap">
+        <div className="text-[26vw] font-bold text-white/[0.02] leading-[0.75] tracking-tighter uppercase flex justify-center gap-[1vw] w-full whitespace-nowrap">
           <span className="relative cursor-default group transition-colors duration-500 hover:text-white/[0.04]">
             <span className="block transition-opacity duration-500 opacity-100 group-hover:opacity-0">KAI</span>
             <span className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-0 group-hover:opacity-100 font-sans tracking-normal pb-[1vw]">カイ</span>
