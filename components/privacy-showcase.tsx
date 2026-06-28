@@ -51,9 +51,9 @@ export default function PrivacyShowcase() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="space-y-8 mb-10"
+            className="flex flex-row sm:flex-col gap-4 sm:gap-8 overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-4 sm:pb-0 -mx-6 px-6 sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] mb-10"
           >
-            <div className="flex gap-4">
+            <div className="flex gap-4 w-[85vw] sm:w-auto flex-shrink-0 snap-center sm:snap-align-none p-5 sm:p-0 rounded-2xl sm:rounded-none bg-[#0f0f13]/80 sm:bg-transparent border border-white/5 sm:border-transparent">
               <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                 <Lock className="w-5 h-5 text-kaizen-purple-light" />
               </div>
@@ -63,7 +63,7 @@ export default function PrivacyShowcase() {
               </div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 w-[85vw] sm:w-auto flex-shrink-0 snap-center sm:snap-align-none p-5 sm:p-0 rounded-2xl sm:rounded-none bg-[#0f0f13]/80 sm:bg-transparent border border-white/5 sm:border-transparent">
               <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                 <WifiOff className="w-5 h-5 text-kaizen-purple-light" />
               </div>
@@ -73,7 +73,7 @@ export default function PrivacyShowcase() {
               </div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 w-[85vw] sm:w-auto flex-shrink-0 snap-center sm:snap-align-none p-5 sm:p-0 rounded-2xl sm:rounded-none bg-[#0f0f13]/80 sm:bg-transparent border border-white/5 sm:border-transparent">
               <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                 <Shield className="w-5 h-5 text-kaizen-purple-light" />
               </div>
@@ -83,7 +83,7 @@ export default function PrivacyShowcase() {
               </div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 w-[85vw] sm:w-auto flex-shrink-0 snap-center sm:snap-align-none p-5 sm:p-0 rounded-2xl sm:rounded-none bg-[#0f0f13]/80 sm:bg-transparent border border-white/5 sm:border-transparent">
               <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                 <Feather className="w-5 h-5 text-kaizen-purple-light" />
               </div>
