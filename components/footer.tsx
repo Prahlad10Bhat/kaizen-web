@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
           <p className="text-zinc-600 text-sm">
             Kaizen © 2026
           </p>
@@ -99,6 +99,13 @@ export default function Footer() {
             <ArrowUp className="w-4 h-4" />
           </button>
         </div>
+      </div>
+
+      {/* Massive Stretched Text */}
+      <div className="mt-8 sm:mt-12 w-full flex justify-center pointer-events-none select-none overflow-hidden -mb-4 sm:-mb-8">
+        <span className="text-[26vw] font-bold text-white/[0.02] leading-[0.75] tracking-tighter uppercase text-center w-full">
+          KAIZEN
+        </span>
       </div>
       <DownloadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </footer>
