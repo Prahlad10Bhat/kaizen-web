@@ -126,7 +126,7 @@ export default function PrivacyShowcase() {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-3 bg-black/40 rounded-2xl p-4 border border-white/5">
+              <div className="flex flex-row sm:flex-col gap-3 bg-black/40 rounded-2xl p-4 border border-white/5 overflow-x-auto sm:overflow-visible snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {[
                   { icon: Database, title: "Data stored locally", desc: "On your device only", status: "Local" },
                   { icon: CloudOff, title: "Offline first", desc: "Full functionality without internet", status: "Available" },
@@ -134,8 +134,8 @@ export default function PrivacyShowcase() {
                   { icon: Download, title: "Export & backup", desc: "Your data, your choice", status: "Always" },
                   { icon: Feather, title: "Lightweight app", desc: "Minimal storage footprint", status: "< 100MB" }
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/5">
-                    <div className="flex items-center gap-4">
+                  <div key={i} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-3 rounded-xl bg-white/5 border border-white/5 w-[220px] sm:w-auto flex-shrink-0 snap-center sm:snap-align-none">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-0">
                       <div className="w-10 h-10 rounded-lg bg-kaizen-purple/10 flex items-center justify-center border border-kaizen-purple/20 shrink-0">
                         <item.icon className="w-5 h-5 text-kaizen-purple-light" />
                       </div>
@@ -144,7 +144,7 @@ export default function PrivacyShowcase() {
                         <div className="text-xs text-zinc-500">{item.desc}</div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center justify-between sm:justify-end gap-2 w-full sm:w-auto border-t border-white/10 sm:border-0 pt-3 sm:pt-0">
                       <span className="text-xs font-bold text-green-500">{item.status}</span>
                       <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center">
                         <Check className="w-3 h-3 text-green-500" />
