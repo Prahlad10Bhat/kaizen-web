@@ -47,6 +47,39 @@ export default function InteractiveShowcase() {
   const [activeFeature, setActiveFeature] = useState(features[0].id);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  const minSwipeDistance = 50;
+
+  const handleTouchStart = (e: any) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: any) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart === null || touchEnd === null) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    
+    if (isLeftSwipe || isRightSwipe) {
+      setIsAutoPlaying(false);
+      setActiveFeature((current) => {
+        const currentIndex = features.findIndex((f) => f.id === current);
+        if (isLeftSwipe) {
+          return features[(currentIndex + 1) % features.length].id;
+        } else {
+          return features[(currentIndex - 1 + features.length) % features.length].id;
+        }
+      });
+    }
+  };
+
   useEffect(() => {
     if (!isAutoPlaying) return;
     const interval = setInterval(() => {
@@ -119,7 +152,12 @@ export default function InteractiveShowcase() {
           </div>
 
           {/* Right Side / Mobile Slider: Image Preview + Info */}
-          <div className="w-full xl:w-1/2 flex flex-col gap-6 xl:gap-0 mt-4 xl:mt-0">
+          <div 
+            className="w-full xl:w-1/2 flex flex-col gap-6 xl:gap-0 mt-4 xl:mt-0"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] rounded-2xl sm:rounded-[2rem] border border-white/10 bg-kaizen-surface/50 backdrop-blur-xl overflow-hidden shadow-2xl ring-1 ring-white/5">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-kaizen-purple/10 blur-[100px] rounded-full pointer-events-none" />
             
